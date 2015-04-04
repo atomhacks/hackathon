@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+html, body {
+  background-color: #007161;
+}
+
+body {
+  height: 730px;
+}
+
+header {
+  background-color: #fff;
+  width: 960px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+header #logo {
+  margin: 16px 0 16px 24px;
+  height: 58px;
+}
+
+header * {
+  display: inline-block;
+}
+
+header h2 {
+  color: #007161;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 58px;
+  margin: 16px 0 16px 16px;
+  vertical-align: top;
+}
+
+nav {
+  float: right;
+  margin: 28px 28px 0;
+}
+
+nav a {
+  color: #007161;
+  text-decoration: none;
+  margin-left: 12px;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 35px;
+}
+
+nav a.social {
+  margin-left: 24px;
+}
+
+section {
+  padding: 32px;
+}
+
+#main {
+  padding: 0;
+  background-color: #007161;
+  background: url(school.jpg) no-repeat center bottom scroll;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+#main h1 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 36px auto 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ddd;
+  text-align: center;
+  margin: 4px auto 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#atom {
+  width: 172px;
+  margin: 90px auto 0;
+  display: block;
+}
+
+#register {
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0);
+  font-size: 24px;
+  margin: 48px auto;
+  display: block;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+#judges {
+  background-color: #fff;
+}
+
+#judges h1 {
+  font-size: 36px;
+  color: #007161;
+  text-align: center;
+  margin: 0 auto 28px;
+}
+
+#judgelist {
+  margin-bottom: 8px;
+}
+
+.judge img {
+  width: 180px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 12px;
+  border-radius: 90px;
+}
+
+.judge h4 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.judge span {
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.clear {
+  margin: 32px;
+}
+
+#schedule {
+  background-color: #007161;
+}
+
+#schedule h1 {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto 28px;
+}
+
+.scheduletable {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.scheduletable tr td {
+  padding: 12px 16px;
+  color: #fff;
+}
+
+#sponsors {
+  background-color: #fff;
+}
+
+#sponsors h1 {
+  font-size: 36px;
+  color: #007161;
+  text-align: center;
+  margin: 0 auto 28px;
+}
+
+#faq {
+  background-color: #007161;
+}
+
+#faq h1 {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto 28px;
+}
+
+.question h4 {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.question p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer {
+  background: #222;
+  padding: 10px;
+}
+
+footer span {
+  color: #fff;
+  text-align: center;
+  display: block;
+}
