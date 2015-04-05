@@ -10,13 +10,8 @@ html, body {
   background-color: #007161;
 }
 
-body {
-  height: 730px;
-}
-
 header {
   background-color: #fff;
-  width: 960px;
   height: 90px;
   margin: 0 auto;
 }
@@ -62,11 +57,10 @@ section {
 }
 
 #main {
-  padding: 0;
+  padding: 0 32px;
   background-color: #007161;
-  background: url(school.jpg) no-repeat center bottom scroll;
-  width: 100%;
-  height: 100%;
+  background: url(school.png) no-repeat center bottom scroll;
+  width: 960px;
   background-size: cover;
 }
 
@@ -88,17 +82,10 @@ section {
   font-family: 'Open Sans', sans-serif;
 }
 
-#container {
-  background: rgba(0, 0, 0, 0.65);
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
 #atom {
-  width: 172px;
-  margin: 90px auto 0;
-  display: block;
+  /*width: 172px;*/
+  margin: 72px auto 0;
+  /*display: block;*/
 }
 
 #register {
@@ -107,7 +94,7 @@ section {
   border-radius: 8px;
   background: rgba(0, 0, 0, 0);
   font-size: 24px;
-  margin: 48px auto;
+  margin: 48px 400px 72px;
   display: block;
   padding: 8px 12px;
   cursor: pointer;
