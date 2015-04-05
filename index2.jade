@@ -1,0 +1,78 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title BXHacks
+    link(rel='stylesheet', href='style.css')
+    link(rel='stylesheet', href='960.css')
+    link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Cabin:400,500,600')
+  body
+    section(id='main')
+      div(id='container')
+        header
+          img(src='logo.png', id='logo')
+          h2 BXHacks
+          nav
+            a(href='#main') Home
+            a(href='#judges') Judges
+            a(href='#schedule') Schedule
+            a(href='#sponsors') Sponsors
+            a(href='#faq') FAQ
+            a(href='facebook', class='social')
+              i(class='fa fa-facebook-official fa-lg')
+            a(href='tweet')
+              i(class='fa fa-twitter fa-lg')
+        img(src='atom.png', id='atom')
+        h1 BXHACKS
+        h4 Bronx Science | May 30-31, 2015
+        button(id='register') Register
+    section(id='judges')
+      h1 Judges
+      div(id='judgelist' class='container_12')
+        - var judges = []
+        - judges.push({'name': 'Judge 1', 'title': 'Position', 'work': 'Company', 'img': 'http://placehold.it/1000'})
+        each judge in judges
+          div(class='judge grid_3')
+            img(src='#{judge.img}')
+            h4 #{judge.name}
+            span #{judge.title}, #{judge.work}
+    section(id='schedule')
+      h1 Schedule
+      div(id='scheduletable', class='container_12')
+        div(class='grid_6')
+          - var saturday = []
+          - saturday.push({'time': '9:00 AM', 'text': 'Registration Opens'})
+          - saturday.push({'time': '10:00 AM', 'text': 'Registration Opens'})
+          table(class='scheduletable')
+            each event in saturday
+              tr
+                td #{event.time}
+                td #{event.text}
+        div(class='grid_6')
+          - var sunday = []
+          - sunday.push({'time': '9:00 AM', 'text': 'Registration Opens'})
+          - sunday.push({'time': '10:00 AM', 'text': 'Registration Opens'})
+          table(class='scheduletable')
+            each event in sunday
+              tr
+                td #{event.time}
+                td #{event.text}
+    section(id='sponsors')
+      h1 Sponsors
+      div(id='logos', class='container_12')
+        img(src='http://placehold.it/100', class='grid_2 prefix_5 suffix_5')
+    section(id='faq')
+      h1 FAQ
+      div(id='questions', class='container_12')
+        - var questions = []
+        - questions.push({'q': 'When is BXHacks?', 'a': 'BXHacks will start at 9am on Saturday, May 30 and and at 5pm on Sunday, May 31'})
+        each question in questions
+          div(class='question grid_4')
+            h4 #{question.q}
+            p #{question.a}
+    footer
+      span Made in NYC
+    script(src='main.js')
+    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
