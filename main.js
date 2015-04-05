@@ -1,4 +1,4 @@
-$(document).ready(function() {
+(function($) {
   $(document).on('click', 'a[href^="#"]', function(e) {
     var id = $(this).attr('href');
     var $id = $(id);
@@ -10,4 +10,4 @@ $(document).ready(function() {
     var pos = $(id).offset().top;
     $('body, html').animate({scrollTop: pos});
   });
-});
+})(jQuery);
