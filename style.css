@@ -7,7 +7,7 @@
 }
 
 html, body {
-  background-color: #007161;
+  background-color: #222;
 }
 
 header {
@@ -69,7 +69,8 @@ section {
   font-weight: 700;
   color: #fff;
   text-align: center;
-  margin: 36px auto 0;
+  margin-top: 36px;
+  margin-bottom: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -78,14 +79,13 @@ section {
   font-weight: 700;
   color: #ddd;
   text-align: center;
-  margin: 4px auto 0;
+  margin-top: 4px;
+  margin-bottom: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
 #atom {
-  /*width: 172px;*/
   margin: 72px auto 0;
-  /*display: block;*/
 }
 
 #register {
@@ -104,11 +104,19 @@ section {
   background-color: #fff;
 }
 
-#judges h1 {
+.title {
   font-size: 36px;
-  color: #007161;
+  margin-top: 0;
+  margin-bottom: 28px;
   text-align: center;
-  margin: 0 auto 28px;
+}
+
+.green {
+  color: #007161;
+}
+
+.white {
+  color: #fff;
 }
 
 #judgelist {
@@ -143,13 +151,6 @@ section {
   background-color: #007161;
 }
 
-#schedule h1 {
-  font-size: 36px;
-  color: #fff;
-  text-align: center;
-  margin: 0 auto 28px;
-}
-
 .scheduletable {
   margin: 0 auto;
 }
@@ -163,22 +164,8 @@ section {
   background-color: #fff;
 }
 
-#sponsors h1 {
-  font-size: 36px;
-  color: #007161;
-  text-align: center;
-  margin: 0 auto 28px;
-}
-
 #faq {
   background-color: #007161;
-}
-
-#faq h1 {
-  font-size: 36px;
-  color: #fff;
-  text-align: center;
-  margin: 0 auto 28px;
 }
 
 .question h4 {
