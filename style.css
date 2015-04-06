@@ -85,7 +85,8 @@ section {
 }
 
 #atom {
-  margin: 72px auto 0;
+  margin-top: 72px;
+  margin-bottom: 0;
 }
 
 #register {
@@ -95,6 +96,7 @@ section {
   background: rgba(0, 0, 0, 0);
   font-size: 24px;
   margin: 48px 400px 72px;
+  width: 160px;
   display: block;
   padding: 8px 12px;
   cursor: pointer;
