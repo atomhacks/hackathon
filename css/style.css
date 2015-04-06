@@ -13,7 +13,8 @@ html, body {
 header {
   background-color: #fff;
   height: 90px;
-  margin: 0 auto;
+  margin: 0 !important;
+  width: 100% !important;
 }
 
 header * {
@@ -53,10 +54,10 @@ nav .social {
 }
 
 #main {
-  padding: 0 32px;
+  padding: 0;
   background-color: #007161;
   background: url(../img/school.png) no-repeat center bottom scroll;
-  width: 960px;
+  width: 1024px;
   background-size: cover;
 }
 
