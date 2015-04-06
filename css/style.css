@@ -55,7 +55,7 @@ nav .social {
 #main {
   padding: 0 32px;
   background-color: #007161;
-  background: url(school.png) no-repeat center bottom scroll;
+  background: url(../img/school.png) no-repeat center bottom scroll;
   width: 960px;
   background-size: cover;
 }
