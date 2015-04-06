@@ -2,21 +2,80 @@ extends ./layout.jade
 
 block content
   section(id='main', class='container_12')
-    header(class='grid_12')
-      img(src='logo.png', id='logo')
-      h2(id='logotext') BXHacks
-      nav
-        a(href='#main') Home
-        a(href='#judges') Judges
-        a(href='#schedule') Schedule
-        a(href='#sponsors') Sponsors
-        a(href='#faq') FAQ
-        a(href='facebook', class='social')
-          i(class='fa fa-facebook-official fa-lg')
-        a(href='tweet')
-          i(class='fa fa-twitter fa-lg')
+    include navbar.jade
     h1(class='grid_12') Register
   section(id='register', class='container_12 white')
-    p Test
-  
+    form(id='user-form', enctype='multipart/form-data', class='grid_8 prefix_2 suffix_2')
+      p We're glad to hear you're interested in coming to BXHacks! Fill out this form to apply. Feel free to email us at info@bxhacks.io if you have any questions.
+      fieldset
+        h2 General Information
+        .question
+          label(for='user-name') Full Name
+            span(class='short-desc') required
+          input(id='user-name', type='text', name='user[name]', required)
+        .question
+          label(for='user-email') School Email
+            span(class='short-desc') required
+          input(id='user-email', type='text', name='user[email]', required)
+        .question
+          label(for='user-phone') Phone Number
+          input(id='user-phone', type='text', name='user[phone]')
+        .question
+          label(for='user-year') Graduation Year
+            span(class='short-desc') required
+          input(id='user-year', type='number', name='user[year]', value='2015', required)
+        .question
+          .checklist
+            h2 Gender
+            label
+              input(id='user-male', type='radio', name='user[gender]')
+              span Male
+            label
+              input(id='user-female', type='radio', name='user[gender]')
+              span Female
+            label
+              input(id='user-other', type='radio', name='user[gender]')
+              span Other
+        .question
+          label(for='user-shirt') Shirt Size
+          select(id='user-shirt', name='user[shirt]')
+            option(value='XS') X Small
+            option(value='S') Small
+            option(value='M') Medium
+            option(value='L') Large
+            option(value='XL') X Large
+        .question
+          .checklist
+            h2 Dietary Restrictions
+            label
+              input(id='user-vegetarian', type='checkbox', name='user[dietary][vegetarian]')
+              span Vegetarian
+            label
+              input(id='user-vegan', type='checkbox', name='user[dietary][vegan]')
+              span Vegan
+            label
+              input(id='user-gluten', type='checkbox', name='user[dietary][gluten]')
+              span Gluten Free
+            label
+              input(id='user-kosher', type='checkbox', name='user[dietary][kosher]')
+              span Kosher
+            label
+              input(id='user-lactose', type='checkbox', name='user[dietary][lactose]')
+              span Lactose Intolerant
+            label
+              input(id='user-halal', type='checkbox', name='user[dietary][halal]')
+              span Halal
+        .question
+          h2 Terms
+          .checklist
+            label
+              input(id='user-conduct', type='checkbox', name='user[terms][conduct]')
+              span I agree to the Code of Conduct.
+            label
+              input(id='user-student', type='checkbox', name='user[terms][student]')
+              span I verify that I am a current student at Bronx Science, and am eligible to participate in this event.
+        input(type='submit', value='register', id='submit-button')
+  footer
+    span Made in NYC
+          
   link(rel='stylesheet', href='./css/register.css')
