@@ -87,4 +87,10 @@ h2 {
   display: block;
   padding: 8px 0;
   cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#submit-button:hover {
+  color: #fff;
+  background: #222;
 }
