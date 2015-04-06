@@ -10,10 +10,12 @@
   background: rgba(0, 0, 0, 0);
   font-size: 24px;
   margin: 48px 400px 72px;
-  width: 160px;
+  width: 140px;
   display: block;
-  padding: 8px 12px;
+  padding: 8px;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
 }
 
 #judgelist {
