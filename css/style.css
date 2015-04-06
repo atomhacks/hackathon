@@ -66,8 +66,7 @@ nav .social {
   font-weight: 700;
   color: #fff;
   text-align: center;
-  margin-top: 36px;
-  margin-bottom: 0;
+  margin: 36px 42px 0;
 }
 
 #main h4 {
@@ -75,8 +74,7 @@ nav .social {
   font-weight: 700;
   color: #ddd;
   text-align: center;
-  margin-top: 4px;
-  margin-bottom: 0;
+  margin: 4px 42px 0;
 }
 
 footer {
