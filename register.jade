@@ -19,11 +19,11 @@ block content
           input(id='user-email', type='text', name='user[email]', placeholder='email@bxscience.edu', required)
         .question
           label(for='user-phone') Phone Number
-          input(id='user-phone', type='number', name='user[phone]', placeholder='1234567890')
+          input(id='user-phone', type='number', name='user[phone]', placeholder='1234567890', pattern='[0-9]*')
         .question
           label(for='user-year') Graduation Year
             span(class='short-desc') required
-          input(id='user-year', type='number', name='user[year]', placeholder='2015', required)
+          input(id='user-year', type='number', name='user[year]', placeholder='2015', pattern='[0-9]*', required)
         .question
           .checklist
             span(class='short-desc') required
