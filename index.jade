@@ -4,7 +4,7 @@ block content
   section(id='main', class='container_12')
     header(class='grid_12')
       img(src='logo.png', id='logo')
-      h2 BXHacks
+      h2(id='logotext') BXHacks
       nav
         a(href='#main') Home
         a(href='#judges') Judges
@@ -18,9 +18,9 @@ block content
     img(src='atom.png', id='atom', class='grid_2 prefix_5 suffix_5')
     h1(class='grid_12') BXHACKS
     h4(class='grid_12') Bronx Science | May 30-31, 2015
-    button(id='register', class='grid_12') Register
-  section(id='judges', class='container_12')
-    h1(class='title green grid_12') Judges
+    button(id='registerbutton', class='grid_12') Register
+  section(id='judges', class='container_12 white')
+    h1(class='grid_12') Judges
     - var judges = []
     - judges.push({'name': 'Judge 1', 'title': 'Position', 'work': 'Company', 'img': 'http://placehold.it/1000'})
     each judge in judges
@@ -28,8 +28,8 @@ block content
         img(src='#{judge.img}')
         h4 #{judge.name}
         span #{judge.title}, #{judge.work}
-  section(id='schedule', class='container_12')
-    h1(class='title white grid_12') Schedule
+  section(id='schedule', class='container_12 green')
+    h1(class='grid_12') Schedule
     div(class='grid_6')
       - var saturday = []
       - saturday.push({'time': '9:00 AM', 'text': 'Registration Opens'})
@@ -48,11 +48,11 @@ block content
           tr
             td #{event.time}
             td #{event.text}
-  section(id='sponsors', class='container_12')
-    h1(class='title green grid_12') Sponsors
+  section(id='sponsors', class='container_12 white')
+    h1(class='grid_12') Sponsors
     img(src='http://placehold.it/100', class='grid_2 prefix_5 suffix_5')
-  section(id='faq', class='container_12')
-    h1(class='title white grid_12') FAQ
+  section(id='faq', class='container_12 green')
+    h1(class='grid_12') FAQ
     - var questions = []
     - questions.push({'q': 'When is BXHacks?', 'a': 'BXHacks will start at 9am on Saturday, May 30 and and at 5pm on Sunday, May 31'})
     each question in questions
@@ -61,3 +61,5 @@ block content
         p #{question.a}
   footer
     span Made in NYC
+  
+  link(rel='stylesheet', href='home.css')

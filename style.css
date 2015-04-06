@@ -16,16 +16,16 @@ header {
   margin: 0 auto;
 }
 
-header #logo {
-  margin: 16px 0 16px 24px;
-  height: 58px;
-}
-
 header * {
   display: inline-block;
 }
 
-header h2 {
+#logo {
+  margin: 16px 0 16px 24px;
+  height: 58px;
+}
+
+#logotext {
   color: #007161;
   font-weight: 600;
   font-size: 32px;
@@ -48,12 +48,8 @@ nav a {
   line-height: 35px;
 }
 
-nav a.social {
+nav .social {
   margin-left: 24px;
-}
-
-section {
-  padding: 32px;
 }
 
 #main {
@@ -71,7 +67,6 @@ section {
   text-align: center;
   margin-top: 36px;
   margin-bottom: 0;
-  font-family: 'Open Sans', sans-serif;
 }
 
 #main h4 {
@@ -81,106 +76,6 @@ section {
   text-align: center;
   margin-top: 4px;
   margin-bottom: 0;
-  font-family: 'Open Sans', sans-serif;
-}
-
-#atom {
-  margin-top: 72px;
-  margin-bottom: 0;
-}
-
-#register {
-  border: 2px solid #fff;
-  color: #fff;
-  border-radius: 8px;
-  background: rgba(0, 0, 0, 0);
-  font-size: 24px;
-  margin: 48px 400px 72px;
-  width: 160px;
-  display: block;
-  padding: 8px 12px;
-  cursor: pointer;
-}
-
-#judges {
-  background-color: #fff;
-}
-
-.title {
-  font-size: 36px;
-  margin-top: 0;
-  margin-bottom: 28px;
-  text-align: center;
-}
-
-.green {
-  color: #007161;
-}
-
-.white {
-  color: #fff;
-}
-
-#judgelist {
-  margin-bottom: 8px;
-}
-
-.judge img {
-  width: 180px;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 12px;
-  border-radius: 90px;
-}
-
-.judge h4 {
-  font-size: 16px;
-  text-align: center;
-}
-
-.judge span {
-  font-size: 14px;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-}
-
-.clear {
-  margin: 32px;
-}
-
-#schedule {
-  background-color: #007161;
-}
-
-.scheduletable {
-  margin: 0 auto;
-}
-
-.scheduletable tr td {
-  padding: 12px 16px;
-  color: #fff;
-}
-
-#sponsors {
-  background-color: #fff;
-}
-
-#faq {
-  background-color: #007161;
-}
-
-.question h4 {
-  color: #fff;
-  text-align: center;
-  font-size: 22px;
-  margin-bottom: 6px;
-}
-
-.question p {
-  color: #fff;
-  text-align: center;
-  font-size: 14px;
 }
 
 footer {
@@ -192,4 +87,33 @@ footer span {
   color: #fff;
   text-align: center;
   display: block;
+}
+
+
+section {
+  padding: 32px;
+}
+
+section h1 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+
+.green {
+  background-color: #007161;
+}
+
+.green h1 {
+  color: #fff;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.white h1 {
+  color: #007161;
 }

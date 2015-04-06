@@ -1,0 +1,22 @@
+extends ./layout.jade
+
+block content
+  section(id='main', class='container_12')
+    header(class='grid_12')
+      img(src='logo.png', id='logo')
+      h2(id='logotext') BXHacks
+      nav
+        a(href='#main') Home
+        a(href='#judges') Judges
+        a(href='#schedule') Schedule
+        a(href='#sponsors') Sponsors
+        a(href='#faq') FAQ
+        a(href='facebook', class='social')
+          i(class='fa fa-facebook-official fa-lg')
+        a(href='tweet')
+          i(class='fa fa-twitter fa-lg')
+    h1(class='grid_12') Register
+  section(id='register', class='container_12 white')
+    p Test
+  
+  link(rel='stylesheet', href='register.css')
