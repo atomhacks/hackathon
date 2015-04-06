@@ -1,75 +1,63 @@
-doctype html
-html
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=960, initial-scale=1')
-    title BXHacks
-  body
-    section(id='main', class='container_12')
-      header(class='grid_12')
-        img(src='logo.png', id='logo')
-        h2 BXHacks
-        nav
-          a(href='#main') Home
-          a(href='#judges') Judges
-          a(href='#schedule') Schedule
-          a(href='#sponsors') Sponsors
-          a(href='#faq') FAQ
-          a(href='facebook', class='social')
-            i(class='fa fa-facebook-official fa-lg')
-          a(href='tweet')
-            i(class='fa fa-twitter fa-lg')
-      img(src='atom.png', id='atom', class='grid_2 prefix_5 suffix_5')
-      h1(class='grid_12') BXHACKS
-      h4(class='grid_12') Bronx Science | May 30-31, 2015
-      button(id='register', class='grid_12') Register
-    section(id='judges', class='container_12')
-      h1(class='title green grid_12') Judges
-      - var judges = []
-      - judges.push({'name': 'Judge 1', 'title': 'Position', 'work': 'Company', 'img': 'http://placehold.it/1000'})
-      each judge in judges
-        div(class='judge grid_3')
-          img(src='#{judge.img}')
-          h4 #{judge.name}
-          span #{judge.title}, #{judge.work}
-    section(id='schedule', class='container_12')
-      h1(class='title white grid_12') Schedule
-      div(class='grid_6')
-        - var saturday = []
-        - saturday.push({'time': '9:00 AM', 'text': 'Registration Opens'})
-        - saturday.push({'time': '10:00 AM', 'text': 'Registration Opens'})
-        table(class='scheduletable')
-          each event in saturday
-            tr
-              td #{event.time}
-              td #{event.text}
-      div(class='grid_6')
-        - var sunday = []
-        - sunday.push({'time': '9:00 AM', 'text': 'Registration Opens'})
-        - sunday.push({'time': '10:00 AM', 'text': 'Registration Opens'})
-        table(class='scheduletable')
-          each event in sunday
-            tr
-              td #{event.time}
-              td #{event.text}
-    section(id='sponsors', class='container_12')
-      h1(class='title green grid_12') Sponsors
-      img(src='http://placehold.it/100', class='grid_2 prefix_5 suffix_5')
-    section(id='faq', class='container_12')
-      h1(class='title white grid_12') FAQ
-      - var questions = []
-      - questions.push({'q': 'When is BXHacks?', 'a': 'BXHacks will start at 9am on Saturday, May 30 and and at 5pm on Sunday, May 31'})
-      each question in questions
-        div(class='question grid_4')
-          h4 #{question.q}
-          p #{question.a}
-    footer
-      span Made in NYC
-    
-    link(rel='stylesheet', href='style.css')
-    link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/960gs/0/960.min.css')
-    link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css')
-    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700')
-    
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js')
-    script(src='main.js')
+extends ./layout.jade
+
+block content
+  section(id='main', class='container_12')
+    header(class='grid_12')
+      img(src='logo.png', id='logo')
+      h2 BXHacks
+      nav
+        a(href='#main') Home
+        a(href='#judges') Judges
+        a(href='#schedule') Schedule
+        a(href='#sponsors') Sponsors
+        a(href='#faq') FAQ
+        a(href='facebook', class='social')
+          i(class='fa fa-facebook-official fa-lg')
+        a(href='tweet')
+          i(class='fa fa-twitter fa-lg')
+    img(src='atom.png', id='atom', class='grid_2 prefix_5 suffix_5')
+    h1(class='grid_12') BXHACKS
+    h4(class='grid_12') Bronx Science | May 30-31, 2015
+    button(id='register', class='grid_12') Register
+  section(id='judges', class='container_12')
+    h1(class='title green grid_12') Judges
+    - var judges = []
+    - judges.push({'name': 'Judge 1', 'title': 'Position', 'work': 'Company', 'img': 'http://placehold.it/1000'})
+    each judge in judges
+      div(class='judge grid_3')
+        img(src='#{judge.img}')
+        h4 #{judge.name}
+        span #{judge.title}, #{judge.work}
+  section(id='schedule', class='container_12')
+    h1(class='title white grid_12') Schedule
+    div(class='grid_6')
+      - var saturday = []
+      - saturday.push({'time': '9:00 AM', 'text': 'Registration Opens'})
+      - saturday.push({'time': '10:00 AM', 'text': 'Registration Opens'})
+      table(class='scheduletable')
+        each event in saturday
+          tr
+            td #{event.time}
+            td #{event.text}
+    div(class='grid_6')
+      - var sunday = []
+      - sunday.push({'time': '9:00 AM', 'text': 'Registration Opens'})
+      - sunday.push({'time': '10:00 AM', 'text': 'Registration Opens'})
+      table(class='scheduletable')
+        each event in sunday
+          tr
+            td #{event.time}
+            td #{event.text}
+  section(id='sponsors', class='container_12')
+    h1(class='title green grid_12') Sponsors
+    img(src='http://placehold.it/100', class='grid_2 prefix_5 suffix_5')
+  section(id='faq', class='container_12')
+    h1(class='title white grid_12') FAQ
+    - var questions = []
+    - questions.push({'q': 'When is BXHacks?', 'a': 'BXHacks will start at 9am on Saturday, May 30 and and at 5pm on Sunday, May 31'})
+    each question in questions
+      div(class='question grid_4')
+        h4 #{question.q}
+        p #{question.a}
+  footer
+    span Made in NYC
