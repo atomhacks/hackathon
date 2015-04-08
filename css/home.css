@@ -1,17 +1,22 @@
 #atom {
   width: 140px;
   height: 130px;
-  margin: 72px auto 0;
+  margin: 48px auto 0;
   display: block;
 }
 
-#registerbutton {
+#register-button-container {
+  width: 100%;
+  margin: 0;
+}
+
+#register-button {
   border: 2px solid #fff;
   color: #fff;
   border-radius: 8px;
   background: rgba(0, 0, 0, 0);
   font-size: 24px;
-  margin: 48px auto 72px;
+  margin: 48px auto;
   width: 140px;
   height: 33px;
   display: block;
@@ -66,10 +71,8 @@
 }
 
 .question {
-  width: 280px !important;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-bottom: 16px;
+  height: 131px;
 }
 
 .question h4 {

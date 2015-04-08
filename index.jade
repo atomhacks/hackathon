@@ -6,7 +6,8 @@ block content
     img(src='./img/atom.png', id='atom')
     h1(class='grid_12') BXHACKS
     h4(class='grid_12') Bronx Science | May 30-31, 2015
-    a(id='registerbutton', class='grid_12', href='register.html') Register
+    div(id='register-button-container', class='grid_12')
+      a(id='register-button', href='register.html') Register
   section(id='judges', class='container_12 white')
     h1(class='grid_12') Judges
     - var judges = []
@@ -48,9 +49,7 @@ block content
     - questions.push({'q': 'Who can attend?', 'a': 'Because this is our first hackathon, we\'re only taking current Bronx Science students.'})
     - questions.push({'q': 'When is BXHacks?', 'a': 'BXHacks will start at 9am on Saturday, May 30 and and at 5pm on Sunday, May 31'})
     - questions.push({'q': 'How much does it cost?', 'a': 'It\'s completely free! We will provide you with Wi-Fi, meals, and swag throughout the event.'})
-    each question, index in questions
-      if index % 3 == 0 && index != 0
-        div(class='clear')
+    each question in questions
       div(class='question grid_4')
         h4 #{question.q}
         p #{question.a}
