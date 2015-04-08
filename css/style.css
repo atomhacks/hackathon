@@ -112,6 +112,15 @@ footer span {
   header {
     height: 60px;
   }
+
+  #logo {
+    height: 28px;
+  }
+
+  #logotext {
+    line-height: 28px;
+    font-weight: 500;
+  }
 }
 
 
