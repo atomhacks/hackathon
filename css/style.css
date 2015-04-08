@@ -99,9 +99,9 @@ footer span {
   display: block;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1024px) {
   header {
-
+    width: 100%;
   }
 }
 
