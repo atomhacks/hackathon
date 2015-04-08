@@ -41,6 +41,16 @@
   display: block;
 }
 
+#schedule h1 {
+  margin-bottom: 0;
+}
+
+#schedule h2 {
+  color: #fff;
+  text-align: center;
+  margin: 16px auto;
+}
+
 .scheduletable {
   margin: 0 auto;
 }
@@ -48,6 +58,13 @@
 .scheduletable tr td {
   padding: 12px 16px;
   color: #fff;
+}
+
+.question {
+  width: 280px !important;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 16px;
 }
 
 .question h4 {

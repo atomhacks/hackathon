@@ -19,6 +19,7 @@ block content
   section(id='schedule', class='container_12 green')
     h1(class='grid_12') Schedule
     div(class='grid_6')
+      h2 Saturday, May 30
       - var saturday = []
       - saturday.push({'time': '9:00 AM', 'text': 'Registration Opens'})
       - saturday.push({'time': '10:00 AM', 'text': 'Registration Opens'})
@@ -28,6 +29,7 @@ block content
             td #{event.time}
             td #{event.text}
     div(class='grid_6')
+      h2 Sunday, May 31
       - var sunday = []
       - sunday.push({'time': '9:00 AM', 'text': 'Registration Opens'})
       - sunday.push({'time': '10:00 AM', 'text': 'Registration Opens'})
@@ -42,8 +44,13 @@ block content
   section(id='faq', class='container_12 green')
     h1(class='grid_12') FAQ
     - var questions = []
+    - questions.push({'q': 'What is a hackathon?', 'a': 'A hackathon is an event where students of different skill levels and backgrounds come together, form teams, and create a unique software or hardware project from scratch.'})
+    - questions.push({'q': 'Who can attend?', 'a': 'Because this is our first hackathon, we\'re only taking current Bronx Science students.'})
     - questions.push({'q': 'When is BXHacks?', 'a': 'BXHacks will start at 9am on Saturday, May 30 and and at 5pm on Sunday, May 31'})
-    each question in questions
+    - questions.push({'q': 'How much does it cost?', 'a': 'It\'s completely free! We will provide you with Wi-Fi, meals, and swag throughout the event.'})
+    each question, index in questions
+      if index % 3 == 0 && index != 0
+        div(class='clear')
       div(class='question grid_4')
         h4 #{question.q}
         p #{question.a}
