@@ -110,16 +110,20 @@ footer span {
 
 @media only screen and (max-width: 760px) {
   header {
-    height: 60px;
+    height: 64px;
   }
 
   #logo {
-    height: 28px;
+    height: 32px;
   }
 
   #logotext {
-    line-height: 28px;
-    font-weight: 500;
+    line-height: 32px;
+    font-weight: 400;
+  }
+
+  #main {
+    margin-top: 64px;
   }
 }
 
