@@ -15,6 +15,8 @@ header {
   height: 90px;
   margin: 0 !important;
   width: 100% !important;
+  top: 0;
+  position: fixed;
 }
 
 header * {
@@ -53,6 +55,17 @@ nav .social {
   margin-left: 24px;
 }
 
+section {
+  padding: 32px;
+}
+
+section h1 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
 #main {
   padding: 0;
   background-color: #007161;
@@ -88,16 +101,10 @@ footer span {
   display: block;
 }
 
+@media only screen and (max-width: 760px) {
+  header {
 
-section {
-  padding: 32px;
-}
-
-section h1 {
-  font-size: 36px;
-  margin-top: 0;
-  margin-bottom: 28px;
-  text-align: center;
+  }
 }
 
 
