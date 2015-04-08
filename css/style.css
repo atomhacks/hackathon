@@ -16,6 +16,7 @@ header {
   width: 100% !important;
   position: fixed;
   top: 0;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
 }
 
 header * {
@@ -102,24 +103,14 @@ footer span {
 }
 
 @media only screen and (max-width: 1024px) {
-  * {
-    max-width: 100%;
-  }
-
-  body {
-    min-width: 0 !important;
-  }
-
-  header {
-    width: 100%;
-  }
-
   nav {
     display: none;
   }
+}
 
-  section {
-    /*padding: 32px 0;*/
+@media only screen and (max-width: 760px) {
+  header {
+    height: 60px;
   }
 }
 
