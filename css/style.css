@@ -100,8 +100,24 @@ footer span {
 }
 
 @media only screen and (max-width: 1024px) {
+  * {
+    max-width: 100%;
+  }
+
+  body {
+    min-width: 0 !important;
+  }
+
   header {
     width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  section {
+    padding: 32px 0;
   }
 }
 

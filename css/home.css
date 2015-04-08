@@ -1,5 +1,8 @@
 #atom {
-  margin: 72px 42px 0;
+  width: 140px;
+  height: 130px;
+  margin: 72px auto 0;
+  display: block;
 }
 
 #registerbutton {
@@ -8,9 +11,11 @@
   border-radius: 8px;
   background: rgba(0, 0, 0, 0);
   font-size: 24px;
-  margin: 48px 432px 72px;
+  margin: 48px auto 72px;
   width: 140px;
+  height: 33px;
   display: block;
+  position: relative;
   padding: 8px;
   cursor: pointer;
   text-align: center;
