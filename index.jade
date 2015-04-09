@@ -49,7 +49,9 @@ block content
     - questions.push({'q': 'Who can attend?', 'a': 'Because this is our first hackathon, we\'re only taking current Bronx Science students.'})
     - questions.push({'q': 'When is BXHacks?', 'a': 'BXHacks will start at 9am on Saturday, May 30 and and at 5pm on Sunday, May 31'})
     - questions.push({'q': 'How much does it cost?', 'a': 'It\'s completely free! We will provide you with Wi-Fi, meals, and swag throughout the event.'})
-    each question in questions
+    each question, index in questions
+      if index % 3 == 0 && index != 0
+        div(class='clear')
       div(class='question grid_4')
         h4 #{question.q}
         p #{question.a}
