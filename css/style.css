@@ -134,13 +134,19 @@ footer span {
     border-top: #007161 solid 2px;
   }
 
-  nav a {
-    margin-left: 20px;
-    margin-right: 20px;
+  nav ul {
+    width: 100%;
   }
 
   nav ul li {
     display: block;
+  }
+
+  nav a {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    padding-left: 16px;
   }
 
   .facebook, .twitter {
