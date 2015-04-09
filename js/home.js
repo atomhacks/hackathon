@@ -8,7 +8,7 @@
 
     e.preventDefault();
     var pos = $(id).offset().top;
-    $('body, html').animate({scrollTop: pos});
+    $('body, html').animate({scrollTop: pos - 60});
 
     $('nav').removeClass('visible');
   });
