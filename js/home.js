@@ -9,5 +9,7 @@
     e.preventDefault();
     var pos = $(id).offset().top;
     $('body, html').animate({scrollTop: pos});
+
+    $('nav').removeClass('visible');
   });
 })(jQuery);
