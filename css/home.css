@@ -86,3 +86,9 @@
   text-align: center;
   font-size: 14px;
 }
+
+@media only screen and (max-width: 760px) {
+  #faq h1 {
+    margin-bottom: 16px;
+  }
+}

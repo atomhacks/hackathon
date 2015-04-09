@@ -55,6 +55,18 @@ nav .social {
   margin-left: 24px;
 }
 
+#hamburger {
+  height: 32px;
+  float: right;
+  margin: 16px 24px 16px 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0);
+}
+
+#hamburger img {
+  height: 100%;
+}
+
 section {
   padding: 32px;
 }
@@ -102,13 +114,25 @@ footer span {
   display: block;
 }
 
-@media only screen and (max-width: 1024px) {
-  nav {
+@media only screen and (min-width: 761px) {
+  #hamburger {
     display: none;
   }
 }
 
 @media only screen and (max-width: 760px) {
+  nav {
+    background: #222;
+    margin: -5px 0 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  nav a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   header {
     height: 64px;
   }
