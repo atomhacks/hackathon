@@ -126,11 +126,12 @@ footer span {
   }
 
   nav {
-    background: #bbb;
+    background: #fff;
     margin: -5px 0 0;
     padding: 0;
     width: 100%;
     display: none;
+    border-top: #007161 solid 2px;
   }
 
   nav a {
