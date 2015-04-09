@@ -27,6 +27,10 @@
   text-decoration: none;
 }
 
+#judges p {
+  text-align: center;
+}
+
 #judgelist {
   margin-bottom: 8px;
 }
@@ -68,6 +72,39 @@
 .scheduletable tr td {
   padding: 12px 16px;
   color: #fff;
+}
+
+#sponsor-button-container {
+  width: 100%;
+  margin: 0;
+}
+
+#sponsors p {
+  text-align: center;
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
+#sponsor-button {
+  border: 3px solid #222;
+  color: #222;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0);
+  font-size: 18px;
+  margin: 32px auto 0;
+  width: 240px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#sponsor-button:hover {
+  color: #fff;
+  background: #222;
 }
 
 .question {

@@ -10,8 +10,9 @@ block content
       a(id='register-button', href='register.html') Register
   section(id='judges', class='container_12 white')
     h1(class='grid_12') Judges
+    p Coming soon!
     - var judges = []
-    - judges.push({'name': 'Judge 1', 'title': 'Position', 'work': 'Company', 'img': 'http://placehold.it/1000'})
+    //- - judges.push({'name': 'Judge 1', 'title': 'Position', 'work': 'Company', 'img': 'http://placehold.it/1000'})
     each judge in judges
       div(class='judge grid_3')
         img(src='#{judge.img}')
@@ -41,7 +42,9 @@ block content
             td #{event.text}
   section(id='sponsors', class='container_12 white')
     h1(class='grid_12') Sponsors
-    img(src='http://placehold.it/100', class='grid_2 prefix_5 suffix_5')
+    p Sponsors are what make BXHacks possible. These companies back us so we can provide you with food, swag, hardware, and an amazing experience.
+    div(id='sponsor-button-container', class='grid_12')
+      a(id='sponsor-button', href='mailto:sponsor@bxhacks.io?subject=BXHacks%20Sponsorship&body=Hey,%0D%0A%0D%0AWe are interested in sponsoring BXHacks. Could you send us more information?') Become a Sponsor
   section(id='faq', class='container_12 green')
     h1(class='grid_12') FAQ
     - var questions = []
