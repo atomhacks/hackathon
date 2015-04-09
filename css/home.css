@@ -125,6 +125,11 @@
 }
 
 @media only screen and (max-width: 760px) {
+  #sponsors p {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
   #faq h1 {
     margin-bottom: 16px;
   }
