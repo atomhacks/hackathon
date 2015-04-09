@@ -121,11 +121,16 @@ footer span {
 }
 
 @media only screen and (max-width: 760px) {
+  header {
+    height: 64px;
+  }
+
   nav {
-    background: #222;
+    background: #bbb;
     margin: -5px 0 0;
     padding: 0;
     width: 100%;
+    display: none;
   }
 
   nav a {
@@ -133,8 +138,16 @@ footer span {
     margin-right: 20px;
   }
 
-  header {
-    height: 64px;
+  nav ul li {
+    display: block;
+  }
+
+  .facebook, .twitter {
+    display: none;
+  }
+
+  .visible {
+    display: block;
   }
 
   #logo {
