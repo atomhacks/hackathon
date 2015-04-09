@@ -1,8 +1,8 @@
 extends ./layout.jade
 
 block content
+  include navbar.jade
   section(id='main', class='container_12')
-    include navbar.jade
     h1(class='grid_12') Register
   section(id='register', class='container_12 white')
     form(id='user-form', enctype='multipart/form-data', class='grid_8 prefix_2 suffix_2')

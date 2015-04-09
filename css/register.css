@@ -1,5 +1,5 @@
 #main h1 {
-  margin: 48px 42px !important;
+  margin: 36px 0;
 }
 
 p {
@@ -99,4 +99,10 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 #submit-button:hover {
   color: #fff;
   background: #222;
+}
+
+@media only screen and (max-width: 760px) {
+  #main h1 {
+    /*margin: 48px 0;*/
+  }
 }
