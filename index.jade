@@ -4,7 +4,7 @@ block content
   include navbar.jade
   section(id='main', class='container_12')
     img(src='./img/atom.png', id='atom')
-    h1(class='grid_12') BXHACKS
+    h1(class='grid_12') ATOMHACKS
     h4(class='grid_12') Bronx Science | May 30-31, 2015
     div(id='register-button-container', class='grid_12')
       a(id='register-button', href='register.html') Register
@@ -42,15 +42,15 @@ block content
             td #{event.text}
   section(id='sponsors', class='container_12 white')
     h1(class='grid_12') Sponsors
-    p Sponsors are what make BXHacks possible. These companies back us so we can provide you with food, swag, hardware, and an amazing experience.
+    p Sponsors are what make AtomHacks possible. These companies back us so we can provide you with food, swag, hardware, and an amazing experience.
     div(id='sponsor-button-container', class='grid_12')
-      a(id='sponsor-button', href='mailto:sponsor@bxhacks.io?subject=BXHacks%20Sponsorship&body=Hey,%0D%0A%0D%0AWe are interested in sponsoring BXHacks. Could you send us more information?') Become a Sponsor
+      a(id='sponsor-button', href='mailto:sponsor@atomhacks.org?subject=AtomHacks%20Sponsorship&body=Hey,%0D%0A%0D%0AWe are interested in sponsoring AtomHacks. Could you send us more information?') Become a Sponsor
   section(id='faq', class='container_12 green')
     h1(class='grid_12') FAQ
     - var questions = []
     - questions.push({'q': 'What is a hackathon?', 'a': 'A hackathon is an event where students of different skill levels and backgrounds come together, form teams, and create a unique software or hardware project from scratch.'})
     - questions.push({'q': 'Who can attend?', 'a': 'Because this is our first hackathon, we\'re only taking current Bronx Science students.'})
-    - questions.push({'q': 'When is BXHacks?', 'a': 'BXHacks will start at 9am on Saturday, May 30 and and at 5pm on Sunday, May 31'})
+    - questions.push({'q': 'When is AtomHacks?', 'a': 'AtomHacks will start at 9am on Saturday, May 30 and and at 5pm on Sunday, May 31'})
     - questions.push({'q': 'How much does it cost?', 'a': 'It\'s completely free! We will provide you with Wi-Fi, meals, and swag throughout the event.'})
     each question, index in questions
       if index % 3 == 0 && index != 0
