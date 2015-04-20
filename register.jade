@@ -5,41 +5,43 @@ block content
   section(id='main', class='container_12')
     h1(class='grid_12') Register
   section(id='register', class='container_12 white')
-    form(id='user-form', enctype='multipart/form-data', class='grid_8 prefix_2 suffix_2')
+    #form-error
+      p This is an error with the form
+    form(id='user-form', enctype='multipart/form-data', onsubmit='return false', class='grid_8 prefix_2 suffix_2')
       p We're glad to hear you're interested in coming to AtomHacks! Fill out this form to apply. Feel free to email us at info@atomhacks.org if you have any questions.
       fieldset
         h2 General Information
         .question
           label(for='user-name') Full Name
             span(class='short-desc') required
-          input(id='user-name', type='text', name='user[name]', placeholder='John Smith', required)
+          input(id='user-name', type='text', name='name', placeholder='John Smith', required)
         .question
           label(for='user-email') School Email
             span(class='short-desc') required
-          input(id='user-email', type='text', name='user[email]', placeholder='email@bxscience.edu', required)
+          input(id='user-email', type='text', name='email', placeholder='email@bxscience.edu', required)
         .question
           label(for='user-phone') Phone Number
-          input(id='user-phone', type='number', name='user[phone]', placeholder='(917) 555-7890', pattern='[0-9]*')
+          input(id='user-phone', type='number', name='phone', placeholder='(917) 555-7890', pattern='[0-9]*')
         .question
           label(for='user-year') Graduation Year
             span(class='short-desc') required
-          input(id='user-year', type='number', name='user[year]', placeholder='2015', pattern='[0-9]*', required)
+          input(id='user-year', type='number', name='year', placeholder='2015', pattern='[0-9]*', required)
         .question
           .checklist
             span(class='short-desc') required
             h2 Gender
             label
-              input(id='user-male', type='radio', name='user[gender]')
+              input(id='user-male', type='radio', value='male', name='gender')
               span Male
             label
-              input(id='user-female', type='radio', name='user[gender]')
+              input(id='user-female', type='radio', value='female', name='gender')
               span Female
             label
-              input(id='user-other', type='radio', name='user[gender]')
+              input(id='user-other', type='radio', value='other', name='gender')
               span Other
         .question
           label(for='user-shirt') Shirt Size
-          select(id='user-shirt', name='user[shirt]')
+          select(id='user-shirt', name='shirt')
             option(value='XS') X Small
             option(value='S') Small
             option(value='M') Medium
@@ -49,33 +51,33 @@ block content
           .checklist
             h2 Dietary Restrictions
             label
-              input(id='user-vegetarian', type='checkbox', name='user[dietary][vegetarian]')
+              input(id='user-vegetarian', type='checkbox', name='vegetarian')
               span Vegetarian
             label
-              input(id='user-vegan', type='checkbox', name='user[dietary][vegan]')
+              input(id='user-vegan', type='checkbox', name='vegan')
               span Vegan
             label
-              input(id='user-gluten', type='checkbox', name='user[dietary][gluten]')
+              input(id='user-gluten', type='checkbox', name='gluten')
               span Gluten Free
             label
-              input(id='user-kosher', type='checkbox', name='user[dietary][kosher]')
+              input(id='user-kosher', type='checkbox', name='kosher')
               span Kosher
             label
-              input(id='user-lactose', type='checkbox', name='user[dietary][lactose]')
+              input(id='user-lactose', type='checkbox', name='lactose')
               span Lactose Intolerant
             label
-              input(id='user-halal', type='checkbox', name='user[dietary][halal]')
+              input(id='user-halal', type='checkbox', name='halal')
               span Halal
         .question
           h2 Terms
           .checklist
             label
-              input(id='user-conduct', type='checkbox', name='user[terms][conduct]')
+              input(id='user-conduct', type='checkbox', name='conduct')
               span I agree to the Code of Conduct.
             label
-              input(id='user-student', type='checkbox', name='user[terms][student]')
+              input(id='user-student', type='checkbox', name='student')
               span I verify that I am a current student at Bronx Science, and am eligible to participate in this event.
-        input(type='submit', value='register', id='submit-button')
+        input(type='submit', value='register', id='submit-button', onclick='validate_form()')
   footer
     span Made in NYC
 

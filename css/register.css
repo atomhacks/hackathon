@@ -1,3 +1,9 @@
+#form-error {
+  border: 2px solid #e74c3c;
+  margin-bottom: 16px;
+  display: none;
+}
+
 #main h1 {
   margin: 36px 0;
 }

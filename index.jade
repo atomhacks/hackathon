@@ -5,7 +5,7 @@ block content
   section(id='main', class='container_12')
     img(src='./img/atom.png', id='atom')
     h1(class='grid_12') ATOMHACKS
-    h4(class='grid_12') Bronx Science | May 30-31, 2015
+    h4(class='grid_12') Bronx Science | May 29-30, 2015
     div(id='register-button-container', class='grid_12')
       a(id='register-button', href='register.html') Register
   section(id='judges', class='container_12 white')
@@ -56,6 +56,7 @@ block content
     - questions.push({'q': 'Can we start working before the hackathon?', 'a': 'All code related to your hacks must be written during the hackathon, but you can start brainstorming before the event.'})
     - questions.push({'q': 'How big can teams be?', 'a': 'Teams may have no more than 5 members. Members are also welcome to work solo.'})
     - questions.push({'q': 'What can we work on?', 'a': 'Anything you want, as long as your hack doesn\'t violate the code of conduct.'})
+    - questions.push({'q': 'I have another question.', 'a': 'Email info@atomhacks.org with any questions that aren\'t answered here.'})
     each question, index in questions
       if index % 3 == 0 && index != 0
         div(class='clear')
