@@ -27,10 +27,6 @@
   text-decoration: none;
 }
 
-#judges p {
-  text-align: center;
-}
-
 #judgelist {
   margin-bottom: 8px;
 }
@@ -56,7 +52,12 @@
 }
 
 #schedule h1 {
-  margin-bottom: 0;
+  margin-bottom: 18px;
+}
+
+#schedule p {
+  color: #fff;
+  margin-bottom: 4px;
 }
 
 #schedule h2 {

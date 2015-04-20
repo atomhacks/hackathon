@@ -78,6 +78,10 @@ section h1 {
   text-align: center;
 }
 
+section p {
+  text-align: center;
+}
+
 #main {
   background-color: #007161;
   background: url(../img/school.png) no-repeat center bottom scroll;

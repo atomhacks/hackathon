@@ -20,23 +20,24 @@ block content
         span #{judge.title}, #{judge.work}
   section(id='schedule', class='container_12 green')
     h1(class='grid_12') Schedule
+    p A more detailed schedule will be released closer to the hackathon. For now, here are tentative times for the beginning and end of events on Friday and Saturday.
     div(class='grid_6')
-      h2 Saturday, May 30
-      - var saturday = []
-      - saturday.push({'time': '9:00 AM', 'text': 'Registration Opens'})
-      - saturday.push({'time': '10:00 AM', 'text': 'Registration Opens'})
+      h2 Friday, May 29
+      - var friday = []
+      - friday.push({'time': '3:30 PM', 'text': 'Workshops Begin'})
+      - friday.push({'time': '6:00 PM', 'text': 'Workshops End'})
       table(class='scheduletable')
-        each event in saturday
+        each event in friday
           tr
             td #{event.time}
             td #{event.text}
     div(class='grid_6')
-      h2 Sunday, May 31
-      - var sunday = []
-      - sunday.push({'time': '9:00 AM', 'text': 'Registration Opens'})
-      - sunday.push({'time': '10:00 AM', 'text': 'Registration Opens'})
+      h2 Saturday, May 30
+      - var saturday = []
+      - saturday.push({'time': '8:00 AM', 'text': 'Hackathon Begins'})
+      - saturday.push({'time': '9:30 PM', 'text': 'Hackathon Ends'})
       table(class='scheduletable')
-        each event in sunday
+        each event in saturday
           tr
             td #{event.time}
             td #{event.text}
