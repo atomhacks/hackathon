@@ -1,7 +1,7 @@
-extends ./layout.jade
+extends ./layout/main.jade
 
 block content
-  include navbar.jade
+  include ./layout/navbar.jade
   section(id='main', class='container_12')
     img(src='./img/atom.png', id='atom')
     h1(class='grid_12') ATOMHACKS
@@ -53,7 +53,7 @@ block content
     - questions.push({'q': 'Who can attend?', 'a': 'Because this is our first hackathon, we\'re only taking current Bronx Science students.'})
     - questions.push({'q': 'When is AtomHacks?', 'a': 'AtomHacks will start at 9am on Saturday, May 30 and and at 5pm on Sunday, May 31'})
     - questions.push({'q': 'How much does it cost?', 'a': 'It\'s completely free! We will provide you with Wi-Fi, meals, and swag throughout the event.'})
-    - questions.push({'q': 'Can we start working on our hacks before the hackathon?', 'a': 'All code related to your hacks must be written during the hackathon, but you can start brainstorming before the event.'})
+    - questions.push({'q': 'Can we start working before the hackathon?', 'a': 'All code related to your hacks must be written during the hackathon, but you can start brainstorming before the event.'})
     - questions.push({'q': 'How big can teams be?', 'a': 'Teams may have no more than 5 members. Members are also welcome to work solo.'})
     - questions.push({'q': 'What can we work on?', 'a': 'Anything you want, as long as your hack doesn\'t violate the code of conduct.'})
     each question, index in questions
