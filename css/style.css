@@ -113,9 +113,14 @@ footer {
 }
 
 footer span {
-  color: #fff;
   text-align: center;
   display: block;
+}
+
+footer span a {
+  color: #fff;
+  text-transform: none;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 761px) {

@@ -78,8 +78,7 @@ block content
               input(id='user-student', type='checkbox', name='student')
               span I verify that I am a current student at Bronx Science, and am eligible to participate in this event.
         input(type='submit', value='register', id='submit-button', onclick='validate_form()')
-  footer
-    span Made in NYC
+  include ./layout/footer.jade
 
 block scripts
   link(rel='stylesheet', href='./css/register.css')
