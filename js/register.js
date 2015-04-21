@@ -35,7 +35,7 @@ function validate_form() {
   if (name == null || name == '') {
     errors.push('You need to fill in your name');
   } else {
-    redirect_url += '?entry.259310217=' + name;
+    redirect_url += '&entry.259310217=' + name;
   }
 
   var email = form['email'].value;
