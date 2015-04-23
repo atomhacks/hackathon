@@ -80,8 +80,25 @@
   margin: 0;
 }
 
+#sponsors img {
+  height: 68px;
+  margin: 0 auto;
+  display: block;
+}
+
+#mlh-logo {
+  height: 86px !important;
+}
+
+#sponsors h2 {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
 #sponsors p {
   text-align: center;
+  margin-top: 32px;
   margin-left: 64px;
   margin-right: 64px;
 }
