@@ -45,6 +45,17 @@ function validate_form() {
     redirect_url += '&entry.1617286564=' + email;
   }
 
+  var osis = form['osis'].value;
+  if (osis == null || osis == '') {
+    errors.push('You need to fill in your OSIS number');
+  } else {
+    if (parseInt(osis) < 100000000 || parseInt(osis) > 999999999) {
+      errors.push('That OSIS number doesn\'t look correct')
+    } else {
+      redirect_url += '&entry.87755442=' + osis;
+    }
+  }
+
   var phone = form['phone'].value;
   if (phone != null && phone != '') {
     redirect_url += '&entry.2123498044=' + phone;

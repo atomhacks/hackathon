@@ -20,6 +20,10 @@ block content
             span(class='short-desc') required
           input(id='user-email', type='text', name='email', placeholder='email@bxscience.edu', required)
         .question
+          label(for='user-osis') OSIS Number
+            span(class='short-desc') required
+          input(id='user-osis', type='number', name='osis', placeholder='555555555', pattern='[0-9]*', required)
+        .question
           label(for='user-phone') Phone Number
           input(id='user-phone', type='text', name='phone', placeholder='(917) 555-7890', pattern='[0-9]*')
         .question
