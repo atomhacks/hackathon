@@ -63,6 +63,23 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.question textarea {
+  border-radius: 2px;
+  border: solid 1px #e3e3ed;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px;
+  outline: none;
+  box-shadow: 0 0 0 2px transparent;
+  transition: box-shadow 200ms ease-in-out;
+  -moz-appearance: textfield-multiline;
+}
+
+.question textarea:focus {
+  box-shadow: 0 0 0 2px #007161;
+}
+
 .question select {
   font-size: 16px;
 }
