@@ -3,12 +3,12 @@ extends ./layout/main.jade
 block content
   include ./layout/navbar-other.jade
   section(id='main', class='container_12')
-    h1(class='grid_12') Register
+    h1(class='grid_12') Mentor
   section(id='register', class='container_12 white')
     #form-error
       p This is an error with the form
     form(id='user-form', enctype='multipart/form-data', onsubmit='return false', class='grid_8 prefix_2 suffix_2')
-      p AtomHacks is looking for Bronx Science Alumni who are willing to serve as mentors at the inaugural Bronx Science Hackathon. We need mentors to help students formulate their ideas, challenge their assumptions, review their code and help when they get stuck.
+      p AtomHacks is looking for Bronx Science Alumni and friends who are willing to serve as mentors at the inaugural Bronx Science Hackathon. We need mentors to help students formulate their ideas, challenge their assumptions, review their code and help when they get stuck.
       br
       p We need mentors on Saturday, May 30th beginning at 11am once the hacking is underway. We anticipate concluding the event and announcing the winners at 8pm on Saturday night.
       fieldset
@@ -25,7 +25,7 @@ block content
           label(for='user-phone') Phone Number
           input(id='user-phone', type='text', name='phone', placeholder='(917) 555-7890', pattern='[0-9]*',  required)
         .question
-          label(for='user-year') Graduation Year
+          label(for='user-year') HS Graduation Year
             span(class='short-desc') required
           input(id='user-year', type='number', name='year', placeholder='1998', pattern='[0-9]*', required)
         .question
@@ -38,7 +38,7 @@ block content
             option(value='XL') X Large
         .question
           label(for='user-company') Company
-          input(id='user-cmopany', type='text', name='company', placeholder='Google')
+          input(id='user-company', type='text', name='company', placeholder='Google')
         .question
           label(for='user-title') Title
           input(id='user-title', type='text', name='title', placeholder='CEO')
@@ -49,10 +49,11 @@ block content
         .question
           label(for='user-languages') Programming Languages Known
             span(class='short-desc') required
-          textarea(id='user-languages', name='languages', placeholder='Swift, Java, Assembly' required)
+          input(id='user-languages', type='text', name='languages', placeholder='Swift, Java, Assembly' required)
         .question
           label(for='user-bio') Short (fun) Bio
-          textarea(id='user-bio', name='bio')
+            span(class='short-desc') required
+          textarea(id='user-bio', name='bio', rows='4', required)
         input(type='submit', value='sign up', id='submit-button', onclick='validate_form()')
   include ./layout/footer.jade
 

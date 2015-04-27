@@ -35,7 +35,7 @@ function validate_form() {
   if (name == null || name == '') {
     errors.push('You need to fill in your name');
   } else {
-    redirect_url += '&entry.=247391495' + name;
+    redirect_url += '&entry.247391495=' + name;
   }
 
   var email = form['email'].value;
@@ -85,7 +85,26 @@ function validate_form() {
     redirect_url += '&entry.679030639=' + title;
   }
 
-  // add other form objects
+  var expertise = form['expertise'].value;
+  if (expertise == null || expertise == '') {
+    errors.push('You need to fill in your area of expertise');
+  } else {
+    redirect_url += '&entry.959219095=' + expertise;
+  }
+
+  var languages = form['languages'].value;
+  if (languages == null || languages == '') {
+    errors.push('You need to fill in your familiar programming languages');
+  } else {
+    redirect_url += '&entry.438718073=' + languages;
+  }
+
+  var bio = form['bio'].value;
+  if (bio == null || bio == '') {
+    errors.push('You need to write a short bio about yourself');
+  } else {
+    redirect_url += '&entry.793049186=' + bio;
+  }
 
   if (errors.length == 0) {
     form_error.style.display = 'none';
