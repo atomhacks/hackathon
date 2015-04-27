@@ -5,12 +5,11 @@
   display: block;
 }
 
-#register-button-container {
-  width: 100%;
+.major-button-container {
   margin: 0;
 }
 
-#register-button {
+.major-button {
   border: 2px solid #fff;
   color: #fff;
   border-radius: 8px;
@@ -140,6 +139,20 @@
   color: #fff;
   text-align: center;
   font-size: 14px;
+}
+
+@media only screen and (min-width: 761px) {
+  .major-button-container:last-of-type {
+    margin-left: 40px;
+  }
+
+  #register-button {
+    margin-right: 0;
+  }
+
+  #mentor-button {
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 760px) {
