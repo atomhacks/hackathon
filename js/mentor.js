@@ -50,15 +50,18 @@ function validate_form() {
     redirect_url += '&entry.1122254453=' + phone;
   }
 
+  var hs = form['hs'].value;
+  if (hs == null || year == '') {
+    errors.push('You need to fill in the high school you graduated from');
+  } else {
+    redirect_url += '&entry.449676284=' + hs;
+  }
+
   var year = form['year'].value;
   if (year == null || year == '') {
     errors.push('You need to fill in your graduation year');
   } else {
-    if (parseInt(year) < 2015 || parseInt(year) > 2018) {
-      errors.push('You need to be a current student at Bronx Science to attend AtomHacks');
-    } else {
-      redirect_url += '&entry.691741600=' + year;
-    }
+    redirect_url += '&entry.691741600=' + year;
   }
 
   var shirt = document.getElementById('user-shirt').value;

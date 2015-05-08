@@ -25,6 +25,10 @@ block content
           label(for='user-phone') Phone Number
           input(id='user-phone', type='text', name='phone', placeholder='(917) 555-7890', pattern='[0-9]*',  required)
         .question
+          label(for='user-hs') High School Attended
+            span(class='short-desc') required
+          input(id='user-hs', type='text', name='hs', placeholder='Bronx Science', required)
+        .question
           label(for='user-year') HS Graduation Year
             span(class='short-desc') required
           input(id='user-year', type='number', name='year', placeholder='1998', pattern='[0-9]*', required)
