@@ -14,7 +14,7 @@ block content
     h1(class='grid_12') Judges
     - var i = 0
     - var judges = []
-    - judges.push({'name': 'Swift', 'title': 'CEO', 'work': 'Major League Hacking', 'img': './img/judges/swift.png', 'id': 'swift'})
+    - judges.push({'name': 'Mike Swift', 'title': 'CEO', 'work': 'Major League Hacking', 'img': './img/judges/swift.png', 'id': 'swift'})
     //- - judges.push({'name': 'Eric Hoffert', 'title': 'CTO', 'work': 'JW Player', 'img': 'https://media.licdn.com/mpr/mpr/shrink_200_200/p/2/000/005/1d1/03f2f71.jpg', 'id': 'hoffert'})
     each judge in judges
       a(class='judge prefix_4 suffix_4 grid_4 fancybox.ajax', href='./img/judges/#{judge.id}.htm')
