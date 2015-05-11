@@ -15,13 +15,17 @@ block content
     - var i = 0
     - var judges = []
     - judges.push({'name': 'Swift', 'title': 'CEO', 'work': 'Major League Hacking', 'img': './img/judges/swift.png', 'id': 'swift'})
-    - judges.push({'name': 'Eric Hoffert', 'title': 'CTO', 'work': 'JW Player', 'img': './img/judges/hoffert.png', 'id': 'hoffert'})
     each judge in judges
-      a(class='judge grid_4 fancybox.ajax', href='./img/judges/#{judge.id}.htm')
+      a(class='judge grid_12 fancybox.ajax', href='./img/judges/#{judge.id}.htm')
         img(src='#{judge.img}')
         h4 #{judge.name}
         span #{judge.title}, #{judge.work}
       - i += 1
+    h1(class='grid_12') Keynote Speaker
+    a(class='judge grid_12', href='./eric.html')
+      img(src='./img/judges/hoffert.png')
+      h4 Eric Hoffert
+      span CTO, JW Player
   section(id='schedule', class='container_12 green')
     h1(class='grid_12') Schedule
     p A more detailed schedule will be released closer to the hackathon. For now, here are tentative times for the beginning and end of events on Friday and Saturday.

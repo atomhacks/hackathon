@@ -56,6 +56,10 @@
   display: block;
 }
 
+#judges h1:last-of-type {
+  margin-top: 32px;
+}
+
 #schedule h1 {
   margin-bottom: 18px;
 }
