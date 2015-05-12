@@ -93,6 +93,7 @@
   height: 68px;
   margin: 0 auto;
   display: block;
+  max-width: 100%;
 }
 
 #mlh-logo {
@@ -169,6 +170,14 @@
   #sponsors p {
     margin-left: 16px;
     margin-right: 16px;
+  }
+
+  #sponsors div:first-of-type {
+    margin-top: 0;
+  }
+
+  #sponsors div {
+    margin-top: 24px;
   }
 
   #faq h1 {
