@@ -10,6 +10,12 @@ block content
       a(id='register-button', class='major-button', href='register.html') Register
     div(class='major-button-container', class='grid_6')
       a(id='mentor-button', class='major-button', href='mentor.html') Mentor
+  section(id='eric', class='container_12 green')
+    h1(class='grid_12') Keynote Speaker
+    a(class='judge grid_12', href='./eric.html')
+      img(src='./img/judges/eric.png')
+      h4 Eric Hoffert
+      span CTO, JW Player
   section(id='judges', class='container_12 white')
     h1(class='grid_12') Judges
     - var i = 0
@@ -21,11 +27,6 @@ block content
         h4 #{judge.name}
         span #{judge.title}, #{judge.work}
       - i += 1
-    h1(class='grid_12') Keynote Speaker
-    a(class='judge grid_12', href='./eric.html')
-      img(src='./img/judges/eric.png')
-      h4 Eric Hoffert
-      span CTO, JW Player
   section(id='schedule', class='container_12 green')
     h1(class='grid_12') Schedule
     p A more detailed schedule will be released closer to the hackathon. For now, here are tentative times for the beginning and end of events on Friday and Saturday.

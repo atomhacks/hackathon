@@ -26,6 +26,10 @@
   text-decoration: none;
 }
 
+#eric .judge {
+  color: #fff;
+}
+
 #judgelist {
   margin-bottom: 8px;
 }
@@ -54,10 +58,6 @@
   text-align: center;
   margin: 0 auto;
   display: block;
-}
-
-#judges h1:last-of-type {
-  margin-top: 32px;
 }
 
 #schedule h1 {
