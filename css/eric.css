@@ -1,3 +1,7 @@
+#main h1 {
+  margin: 36px 0;
+}
+
 #profile {
   float: left;
   width: 182px;
@@ -5,7 +9,7 @@
   display: block;
 }
 
-p {
+#eric p {
   text-align: left !important;
 }
 
