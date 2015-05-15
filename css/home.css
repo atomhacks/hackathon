@@ -89,11 +89,20 @@
   margin: 0;
 }
 
+#sponsors .sponsor {
+  height: 84px;
+}
+
 #sponsors img {
   height: 68px;
-  margin: 0 auto;
+  margin: 8px auto 0;
   display: block;
   max-width: 100%;
+}
+
+#sponsors img.small {
+  margin-top: 0;
+  height: 84px;
 }
 
 #mlh-logo {
