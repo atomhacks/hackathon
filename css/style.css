@@ -24,17 +24,8 @@ header * {
 }
 
 #logo {
-  margin: 16px 0 16px 24px;
-  height: 58px;
-}
-
-#logotext {
-  color: #007161;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 58px;
-  margin: 16px 0 16px 16px;
-  vertical-align: top;
+  margin: 24px 0 24px 32px;
+  height: 42px;
 }
 
 nav {

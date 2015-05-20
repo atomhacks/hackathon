@@ -20,10 +20,12 @@ block content
     h1(class='grid_12') Judges
     - var i = 0
     - var judges = []
-    - judges.push({'name': 'Swift', 'title': 'CEO', 'work': 'Major League Hacking', 'img': './img/judges/swift.png', 'id': 'swift'})
+    - judges.push({'name': 'Daniel Dubno', 'title': 'CEO', 'work': 'Blowing Things Up', 'id': 'daniel'})
+    - judges.push({'name': 'Michael Dubno', 'title': 'Founder', 'work': 'Gadgetoff', 'id': 'michael'})
+    - judges.push({'name': 'Swift', 'title': 'CEO', 'work': 'Major League Hacking', 'id': 'swift'})
     each judge in judges
-      a(class='judge grid_12 fancybox.ajax', href='./img/judges/#{judge.id}.htm')
-        img(src='#{judge.img}')
+      a(class='judge grid_4', href='./#{judge.id}.html')
+        img(src='./img/judges/#{judge.id}.png')
         h4 #{judge.name}
         span #{judge.title}, #{judge.work}
       - i += 1
