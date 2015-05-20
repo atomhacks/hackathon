@@ -5,9 +5,9 @@
   display: block;
 }
 
-.major-button-container {
+/*.major-button-container {
   margin: 0;
-}
+}*/
 
 .major-button {
   border: 2px solid #fff;
@@ -161,7 +161,7 @@
   font-size: 14px;
 }
 
-@media only screen and (min-width: 761px) {
+/*@media only screen and (min-width: 761px) {
   .major-button-container:last-of-type {
     margin-left: 40px;
   }
@@ -173,7 +173,7 @@
   #mentor-button {
     margin-left: 0;
   }
-}
+}*/
 
 @media only screen and (max-width: 760px) {
   #sponsors p {
