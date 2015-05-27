@@ -15,64 +15,76 @@ block content
     h1(class='grid_12') Keynote Speaker
     a(class='judge grid_12', href='./eric.html')
       img(src='./img/judges/eric.png')
-      h4 Eric Hoffert
+      h4 Eric Hoffert '81
       span SVP of Video Technology, AppNexus
   section(id='judges', class='container_12 white')
     h1(class='grid_12') Judges
     - var i = 0
     - var judges = []
-    - judges.push({'name': 'Daniel Dubno', 'title': 'CEO', 'work': 'Blowing Things Up', 'id': 'daniel'})
-    - judges.push({'name': 'Michael Dubno', 'title': 'Founder', 'work': 'Gadgetoff', 'id': 'michael'})
+    - judges.push({'name': 'Daniel Dubno \'76', 'title': 'CEO', 'work': 'Blowing Things Up', 'id': 'daniel'})
+    - judges.push({'name': 'Michael Dubno \'80', 'title': 'Founder', 'work': 'Gadgetoff', 'id': 'michael'})
+    - judges.push({'name': 'Warren Habib \'81', 'title': 'CTO', 'work': 'Everplans', 'id': 'warren'})
     - judges.push({'name': 'Swift', 'title': 'CEO', 'work': 'Major League Hacking', 'id': 'swift'})
+    - judges.push({'name': 'Minerva Tantoco \'81', 'title': 'CTO', 'work': 'New York City', 'id': 'minerva'})
     each judge in judges
-      a(class='judge grid_4', href='./#{judge.id}.html')
-        img(src='./img/judges/#{judge.id}.png')
-        h4 #{judge.name}
-        span #{judge.title}, #{judge.work}
+      - if (i < 3)
+        a(class='judge grid_4 top', href='./#{judge.id}.html')
+          img(src='./img/judges/#{judge.id}.png')
+          h4 #{judge.name}
+          span #{judge.title}, #{judge.work}
+      - else if (i == 3)
+        a(class='judge grid_4 prefix_2', href='./#{judge.id}.html')
+          img(src='./img/judges/#{judge.id}.png')
+          h4 #{judge.name}
+          span #{judge.title}, #{judge.work}
+      - else if (i == 4)
+        a(class='judge grid_4 suffix_2', href='./#{judge.id}.html')
+          img(src='./img/judges/#{judge.id}.png')
+          h4 #{judge.name}
+          span #{judge.title}, #{judge.work}
       - i += 1
   section(id='schedule', class='container_12 green')
     h1(class='grid_12') Schedule
-    p A more detailed schedule will be released closer to the hackathon. For now, here are tentative times for the beginning and end of events on Friday and Saturday.
+    p Programming workshops will be held on Friday, May 29 after school ends, from 3:30 to 6:00 PM. Vallo buses will be leaving the school after the workshops end. Below is the schedule for the hackathon, taking place on Saturday, May 30.
+    //- h2 Saturday, May 30
     div(class='grid_6')
-      h2 Friday, May 29
-      - var friday = []
-      - friday.push({'time': '3:00 PM', 'text': 'Workshops Begin'})
-      - friday.push({'time': '6:00 PM', 'text': 'Workshops End'})
+      - var morning = []
+      - morning.push({'time': '8:00 AM', 'text': 'Registration & Breakfast'})
+      - morning.push({'time': '8:30 AM', 'text': 'Opening Ceremony w/ Eric Hoffert'})
+      - morning.push({'time': '9:00 AM', 'text': 'Hacking Begins'})
+      - morning.push({'time': '11:00 AM', 'text': 'Mentors Arrive'})
+      - morning.push({'time': '11:00 AM', 'text': 'Snack/Break Rooms Open'})
+      - morning.push({'time': '12:30 PM', 'text': 'Lunch'})
       table(class='scheduletable')
-        each event in friday
+        each event in morning
           tr
             td #{event.time}
             td #{event.text}
     div(class='grid_6')
-      h2 Saturday, May 30
-      - var saturday = []
-      - saturday.push({'time': '8:00 AM', 'text': 'Hackathon Begins'})
-      //- - saturday.push({'time': '8:00 AM', 'text': 'Registration & Breakfast'})
-      //- - saturday.push({'time': '8:30 AM', 'text': 'Opening Ceremony w/ Eric Hoffert'})
-      //- - saturday.push({'time': '9:00 AM', 'text': 'Hacking Begins'})
-      //- - saturday.push({'time': '11:00 AM', 'text': 'Mentors Arrive'})
-      //- - saturday.push({'time': '11:00 AM', 'text': 'Snack/Break Rooms Open'})
-      //- - saturday.push({'time': '12:30 PM', 'text': 'Lunch'})
-      //- - saturday.push({'time': '3:00 PM', 'text': 'Special Snack'})
-      //- - saturday.push({'time': '5:00 PM', 'text': 'Agility Ball'})
-      //- - saturday.push({'time': '7:00 PM', 'text': 'Dinner'})
-      //- - saturday.push({'time': '8:00 PM', 'text': 'Submission Deadline'})
-      //- - saturday.push({'time': '9:00 PM', 'text': 'Closing Ceremony'})
-      - saturday.push({'time': '9:30 PM', 'text': 'Hackathon Ends'})
+      - var afternoon = []
+      - afternoon.push({'time': '3:00 PM', 'text': 'Special Snack'})
+      - afternoon.push({'time': '5:00 PM', 'text': 'Agility Ball'})
+      - afternoon.push({'time': '7:00 PM', 'text': 'Dinner'})
+      - afternoon.push({'time': '8:00 PM', 'text': 'Submission Deadline'})
+      - afternoon.push({'time': '9:00 PM', 'text': 'Closing Ceremony'})
+      - afternoon.push({'time': '10:00 PM', 'text': 'Hackathon Ends'})
       table(class='scheduletable')
-        each event in saturday
+        each event in afternoon
           tr
             td #{event.time}
             td #{event.text}
   section(id='sponsors', class='container_12 white')
     h1(class='grid_12') Sponsors
-    div(class='grid_6 sponsor')
+    div(class='grid_7 sponsor')
       a(href='https://challengepost.com', target='_blank')
         img(src='./img/sponsors/challengepost.png')
-    div(class='grid_4 sponsor')
+    div(class='grid_5 sponsor')
       a(href='http://sunrisecommodities.com', target='_blank')
         img(src='./img/sponsors/sunrise.png')
-    div(class='grid_2 sponsor')
+    div(class='grid_8 prefix_1 sponsor')
+      a(href='', target='_blank')
+        img(src='./img/sponsors/thalmic.png')
+    div(class='grid_2 suffix_1 sponsor')
       a(href='http://traderjoes.com', target='_blank')
         img(src='./img/sponsors/trader-joes.png', class='small')
     .clear

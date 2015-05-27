@@ -39,6 +39,10 @@
   color: #000;
 }
 
+.judge.top {
+  margin-bottom: 32px;
+}
+
 .judge img {
   width: 180px;
   max-width: 100%;
@@ -66,13 +70,7 @@
 
 #schedule p {
   color: #fff;
-  margin-bottom: 4px;
-}
-
-#schedule h2 {
-  color: #fff;
-  text-align: center;
-  margin: 16px auto;
+  margin-bottom: 12px;
 }
 
 .scheduletable {
