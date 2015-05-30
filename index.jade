@@ -6,10 +6,9 @@ block content
     img(src='./img/atom.png', id='atom')
     h1(class='grid_12') ATOMHACKS
     h4(class='grid_12') Bronx Science | May 29-30, 2015
-    //- div(class='major-button-container', class='grid_6')
-    //-   a(id='register-button', class='major-button', href='#') Register
-    //- div(class='major-button-container', class='grid_6')
-    div(class='major-button-container', class='grid_12')
+    div(class='major-button-container', class='grid_6')
+      a(id='register-button', class='major-button', href='https://docs.google.com/a/bxscience.edu/forms/d/1dmAW7b-qxUtERFD6xTtorsKggx5rFyU8gTGMB8a5wVU/' target='_blank') Register Team
+    div(class='major-button-container', class='grid_6')
       a(id='mentor-button', class='major-button', href='mentor.html') Mentor
   section(id='eric', class='container_12 green')
     h1(class='grid_12') Keynote Speaker
@@ -46,7 +45,6 @@ block content
   section(id='schedule', class='container_12 green')
     h1(class='grid_12') Schedule
     p Programming workshops will be held on Friday, May 29 after school ends, from 3:30 to 6:00 PM. Vallo buses will be leaving the school after the workshops end. Below is the schedule for the hackathon, taking place on Saturday, May 30.
-    //- h2 Saturday, May 30
     div(class='grid_6')
       - var morning = []
       - morning.push({'time': '8:00 AM', 'text': 'Registration & Breakfast'})
@@ -63,8 +61,8 @@ block content
     div(class='grid_6')
       - var afternoon = []
       - afternoon.push({'time': '3:00 PM', 'text': 'Special Snack'})
-      - afternoon.push({'time': '5:00 PM', 'text': 'Agility Ball'})
-      - afternoon.push({'time': '7:00 PM', 'text': 'Dinner'})
+      - afternoon.push({'time': '4:00 PM', 'text': 'Cup Stacking'})
+      - afternoon.push({'time': '6:00 PM', 'text': 'Dinner'})
       - afternoon.push({'time': '8:00 PM', 'text': 'Submission Deadline'})
       - afternoon.push({'time': '9:00 PM', 'text': 'Closing Ceremony'})
       - afternoon.push({'time': '10:00 PM', 'text': 'Hackathon Ends'})

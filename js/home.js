@@ -12,8 +12,4 @@
 
     $('nav').removeClass('visible');
   });
-
-  $(document).on('click', '#register-button', function(e) {
-    alert("Registration for AtomHacks has closed.");
-  });
 })(jQuery);
