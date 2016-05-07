@@ -170,6 +170,7 @@ section:nth-child(2n+1) {
 
 #sponsors h1 {
   margin-bottom: 24px;
+  text-align: center;
 }
 
 #sponsors img {
@@ -179,6 +180,11 @@ section:nth-child(2n+1) {
   margin-right: 32px;
   margin-bottom: 16px;
   max-width: 100%;
+}
+
+#sponsors img.center {
+  display: block;
+  margin: 0 auto 16px;
 }
 
 #sponsors p {
