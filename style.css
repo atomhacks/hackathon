@@ -173,18 +173,18 @@ section:nth-child(2n+1) {
   text-align: center;
 }
 
+#sponsors #images, #sponsors #partners {
+  text-align: center;
+}
+
 #sponsors img {
+  display: inline-block;
   float: none;
   height: 64px;
   width: auto;
   margin-right: 32px;
   margin-bottom: 16px;
   max-width: 100%;
-}
-
-#sponsors img.center {
-  display: block;
-  margin: 0 auto 16px;
 }
 
 #sponsors p {
