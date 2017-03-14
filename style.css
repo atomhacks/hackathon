@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
@@ -11,43 +11,38 @@ html, body {
   height: 100%;
 }
 
-header {
-  background-color: rgba(0, 113, 97, 1);
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 8px;
-}
-
-#cover {
-  background: rgba(0, 0, 0, 0.75);
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
 #background {
   position: fixed;
-  top: 0;
-  left: 0;
   height: 100vh;
   width: 100%;
   background: url(./img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center;
+  z-index: -2;
+}
+
+#cover {
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
   z-index: -1;
 }
 
 #text_info {
-  height: 30%;
-  width: 90%;
-  position: absolute;
-  top: 37.5%;
-  left: 10%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  width: 480px;
   color: #fff;
+  text-align: center;
+}
+
+#text_info img {
+  width: 50%;
+  margin: 0 auto 32px;
 }
 
 #text_info h1 {
@@ -59,19 +54,24 @@ header {
   margin-top: 8px;
 }
 
+#text_info .buttons {
+  margin: 0 auto;
+}
+
 #text_info a {
   border: 2px solid #fff;
   color: #fff;
   border-radius: 4px;
   background: rgba(0, 0, 0, 0);
   font-size: 24px;
-  margin: 28px 20px 0 0;
-  width: 160px;
-  height: 33px;
+  margin: 24px 12px 0;
+  /*width: 160px;*/
+  height: 32px;
   display: inline-block;
-  padding: 4px;
-  cursor: pointer;
-  text-align: center;
+  padding: 8px 16px 4px;
+  /*padding: 8px 0 4px;*/
+  /*cursor: pointer;*/
+  /*text-align: center;*/
   text-decoration: none;
 }
 
@@ -133,48 +133,6 @@ section:nth-child(2n+1) {
   margin-right: 48px;
 }
 
-#judges h1 {
-  text-align: center;
-  margin-bottom: 36px;
-}
-
-.judge {
-  display: inline-block;
-  width: 33%;
-}
-
-.judge.first {
-  margin-bottom: 36px;
-}
-
-.judge.second {
-  margin-bottom: 0;
-}
-
-.judge.four {
-  margin-left: 16.67%;
-}
-
-.judge img {
-  float: none;
-  display: block;
-  margin: 0 auto;
-  width: 192px;
-  border-radius: 16px;
-}
-
-.judge h4 {
-  margin-top: 6px;
-  text-align: center;
-  font-size: 16px;
-}
-
-.judge h5 {
-  margin-top: 2px;
-  text-align: center;
-  font-size: 12px;
-}
-
 .question {
   vertical-align: top;
   width: 47.5%;
@@ -215,6 +173,31 @@ section:nth-child(2n+1) {
   text-align: center;
 }
 
+#sponsors p {
+  max-width: 90%;
+  margin: 16px auto 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+#sponsors p a {
+  text-decoration: none;
+  color: #2196f3;
+  transition: color 0.25s ease;
+}
+
+#sponsors p a:hover {
+  color: #1976d2;
+}
+
+#sponsors .hr {
+  width: 100%;
+  background: #ccc;
+  height: 1px;
+  margin: 24px auto 32px;
+}
+
 #sponsors #images, #sponsors #partners {
   text-align: center;
 }
@@ -229,31 +212,14 @@ section:nth-child(2n+1) {
   max-width: 100%;
 }
 
-#sponsors p {
-  max-width: 80%;
-  margin: 16px auto;
+#sponsors a:last-child img {
+  margin-right: 0;
 }
 
-#sponsor-button {
-  border: 2px solid #222;
-  color: #222;
-  border-radius: 4px;
-  background: rgba(0, 0, 0, 0);
-  font-size: 18px;
-  margin: 0 auto 0;
-  width: 240px;
-  text-decoration: none;
-  text-transform: uppercase;
+#sponsors h2 {
   text-align: center;
-  display: block;
-  padding: 8px 0;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-#sponsor-button:hover {
-  color: #fff;
-  background: #222;
+  font-size: 32px;
+  margin: 16px auto 24px;
 }
 
 footer {
@@ -274,16 +240,8 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 760px) {
-  header {
-    display: none;
-  }
-
   #cover img {
     display: none;
-  }
-
-  #text_info {
-    top: 27.5%;
   }
 
   #text_info h1 {

@@ -9,20 +9,24 @@
     <meta property="og:url" content="http://atomhacks.org">
     <meta property="og:image" content="http://atomhacks.org/img/background.jpg">
     <meta property="og:description" content="AtomHacks is a 12-hour long event where Bronx Science students come together to create projects from scratch.">
-    <title>AtomHacks II</title>
+    <title>AtomHacks III</title>
   </head>
   <body>
-  	<div id="background"></div>
-    <div id="cover">
-      <img src="./img/down.svg" />
+  	<div id="background">
+      <div id="cover">
+        <img src="./img/down.svg" />
+      </div>
     </div>
-    <header></header>
     <div id="text_info">
-      <h1>AtomHacks II</h1>
-      <h2>May 13 &#8211; 14, 2016</h2>
+      <img src="./img/bxscience.svg" />
+      <h1>AtomHacks III</h1>
+      <h2>May 12 &#8211; 13, 2017</h2>
       <h2>The Bronx High School of Science</h2>
-      <a href="http://goo.gl/forms/oIYBI1NL30" target="_blank">Register</a>
-      <a href="http://goo.gl/forms/qdBWLWbRe3" target="_blank">Mentor</a>
+      <div class="buttons">
+        <a>Registration coming soon!</a>
+        <!-- <a href="some google form" target="_blank">Register</a>
+        <a href="some google form" target="_blank">Mentor</a> -->
+      </div>
     </div>
     <section>
       <div class="content">
@@ -30,37 +34,6 @@
         <img src="./img/laptop.svg" id="laptop" />
         <p>AtomHacks is a 12-hour long event where students of different skill levels come together to create software and hardware projects from scratch.</p>
         <p>You don't need to be a professional hacker, or even have any programming experience at all! Along with introductory workshops the day before, we'll have on-site mentors who will be able to help you out with any issues you run into.</p>
-      </div>
-    </section>
-    <section></section>
-    <section id="judges">
-      <div class="content">
-        <h1>Judges</h1>
-        <div class="judge first">
-          <img src="./img/judges/daniel.png" />
-          <h4>Daniel Dubno '76</h4>
-          <h5>CEO, Blowing Things Up</h5>
-        </div>
-        <div class="judge first">
-          <img src="./img/judges/michael.png" />
-          <h4>Michael Dubno '80</h4>
-          <h5>Founder, Gadgetoff</h5>
-        </div>
-        <div class="judge first">
-          <img src="./img/judges/marvin.png" />
-          <h4>Marvin Li</h4>
-          <h5>Engineering Manager, Linkedin</h5>
-        </div>
-        <div class="judge second four">
-          <img src="./img/judges/swift.png" />
-          <h4>Swift</h4>
-          <h5>CEO, New York City</h5>
-        </div>
-        <div class="judge second">
-          <img src="./img/judges/minerva.png" />
-          <h4>Minerva Tantoco '81</h4>
-          <h5>CTO, New York City</h5>
-        </div>
       </div>
     </section>
     <section>
@@ -76,7 +49,7 @@
         </div>
         <div class="question">
           <h3>When is AtomHacks?</h3>
-          <p>AtomHacks will h5 over 2 days as it did last year. We will be holding introductory workshops after school on Friday, May 13, with the actual hackathon taking place on Saturday, May 14.</p>
+          <p>AtomHacks will take place over 2 days as it did last year. We will be holding introductory workshops after school on Friday, May 13, with the actual hackathon taking place on Saturday, May 14.</p>
         </div>
         <div class="question">
           <h3>Can I start working before the hackathon?</h3>
@@ -98,7 +71,9 @@
     </section>
     <section id="sponsors">
       <div class="content">
-        <h1>Sponsors</h1>
+        <h1>Previous Partners</h1>
+        <p>Sponsors are what make AtomHacks possible. These companies back us so we can provide attendees with food, swag, hardware, and an amazing experience. Interested? Send us a message at <a href="mailto:info@atomhacks.org">info@atomhacks.org</a>.</p>
+        <div class="hr"></div>
         <div id="images">
           <a href="https://clarifai.com" target="_blank"><img src="./img/sponsors/clarifai.png" /></a>
           <a href="https://consensys.net" target="_blank"><img src="./img/sponsors/consensys.png" /></a>
@@ -106,22 +81,20 @@
           <a href="https://myo.com" target="_blank"><img src="./img/sponsors/thalmic.png" /></a>
           <a href="https://gotutorlist.com" target="_blank"><img src="./img/sponsors/tutorlist.png" /></a>
         </div>
-        <h1>In Partnership with</h1>
+        <h2>Special thanks to:</h1>
         <div id="partners">
           <a href="http://bronxscienceendowmentfund.org" target="_blank"><img src="./img/sponsors/bxsci.png" /></a>
           <a href="https://mlh.io" target="_blank"><img src="./img/sponsors/mlh.png" /></a>
         </div>
-        <p>Sponsors are what make AtomHacks possible. These companies back us so we can provide attendees with food, swag, hardware, and an amazing experience.</p>
-        <a id="sponsor-button" href="mailto:info@atomhacks.org">Become A Sponsor</a>
       </div>
     </section>
     <footer>
-      Made with &#9829; by AtomHacks &#8212; <a href="mailto:info@atomhacks.org">info@atomhacks.org</a>
+      Made with &#9829; by <a href="https://github.com/jackcook/atomhacks" target="_blank">AtomHacks</a> &#8212; <a href="mailto:info@atomhacks.org">info@atomhacks.org</a>
     </footer>
   </body>
 
   <link href="style.css" type="text/css" rel="stylesheet" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400" />
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
