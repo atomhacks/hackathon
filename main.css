@@ -29,7 +29,7 @@ html, body {
   z-index: -1;
 }
 
-#text_info {
+.text_info {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -40,27 +40,27 @@ html, body {
   text-align: center;
 }
 
-#text_info img {
+.text_info img {
   width: 50%;
   margin: 0 auto 32px;
 }
 
-#text_info h1 {
+.text_info h1 {
   font-size: 64px;
 }
 
-#text_info h2 {
+.text_info h2 {
   font-size: 24px;
   margin-top: 8px;
 }
 
-#text_info .buttons {
+.text_info .buttons {
   font-family: 'Rubik', sans-serif !important;
   font-weight: 400;
   margin: 0 auto;
 }
 
-#text_info a {
+.text_info a {
   border: 2px solid #fff;
   color: #fff;
   border-radius: 4px;
