@@ -289,3 +289,6 @@ footer a:hover {
     margin: -8px auto 16px;
   }
 }
+footer a i{
+    margin: 5px 20px;
+}
