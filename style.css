@@ -11,8 +11,82 @@ html, body {
   height: 100%;
 }
 
+#menu{
+  margin: 0 auto;
+  width:800px;
+}
+
+#menu ul{
+  margin:0;
+  margin-bottom: 30px;
+  padding: 30px 0 0;
+  list-style: none;
+  text-align: right;
+}
+
+#menu ul li{
+  float: none;
+  display: inline-block;
+}
+
+#menu ul li:nth-child(1){
+  float:left;
+}
+
+#menu ul li:nth-child(2){
+  float:left;
+}
+
+#menu ul li a{
+  color: #000000;
+  font-size: medium;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 10px 40px;
+  position: relative;
+}
+
+#menu ul li a:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu ul li a:hover:before{
+  visibility: visible;
+  width: 100%;
+}
+
+#navbar{
+  width: 100%;
+  position: relative;
+}
+
+#logo{
+  width: 100px; 
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: "";
+  margin-left: -50px;
+}
+
+#logo img{
+  width: 100px;
+  height: 100px; 
+}
+
 #background {
-  position: fixed;
+  /*position: fixed;*/
+  position: absolute;
   height: 100vh;
   width: 100%;
   background: url(./img/background.jpg);
@@ -89,12 +163,12 @@ section {
   padding: 48px 48px;
 }
 
-section:nth-child(2n) {
+section:nth-child(2n-1) {
   background-color: #007161;
   color: #fff;
 }
 
-section:nth-child(2n+1) {
+section:nth-child(2n) {
   background-color: #fff;
   color: #333;
 }
