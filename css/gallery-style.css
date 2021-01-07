@@ -1,0 +1,13 @@
+.fancy-heading {
+  font-family: 'Permanent Marker', cursive;
+  border-bottom: 5px solid #088008;
+  padding-bottom: 5px;
+}
+
+.sample-box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  padding: 50px;
+  margin: 20px;
+}
