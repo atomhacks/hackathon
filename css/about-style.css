@@ -1,0 +1,68 @@
+
+#description {
+  text-align: center;
+  margin: 0 20px;
+}
+
+#description h1{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.5em;
+}
+
+#description h3{
+  font-family: 'Permanent Marker', cursive;
+}
+
+#team {
+  margin: 0 150px;
+  width:900px;
+}
+
+#team ul{
+  margin:0;
+  padding: 30px 0 0 0 ;
+  list-style: none;
+  text-align: center;
+  border-bottom: 1px solid darkgreen;
+}
+
+#team ul li{
+  display: inline-block;
+}
+
+#team ul li a{
+  color: #000000;
+  font-size: medium;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 10px 40px;
+  position: relative;
+}
+
+#team a:hover{
+  background:lightgreen;
+  transition: 0.5s; 
+}
+
+.leadership img{
+  height: 100px;
+  width:auto;
+}
+
+.content{
+  margin: 0 20px;
+}
+
+section{
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.outreach{
+  border-bottom: 0 solid black;
+}
+
+button{
+  float: right;
+}
