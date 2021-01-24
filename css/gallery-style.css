@@ -12,6 +12,29 @@
   margin: 20px;
 }
 
+.container {
+  position: relative;
+  column-count: 4;
+  padding: 20px;
+}
+
+.image {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.image img {
+  transition: 200ms ease-in-out
+}
+.image:hover img {
+  transform: scale(1.1)
+}
+
+img {
+  width: 100%;
+}
+
+
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -19,20 +42,27 @@
   margin-left: 2px;
 }
 
-.column {
+
+#column {
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
 }
 
-.column img {
+#column img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
 
+@media screen and (max-width:768px) {
+  .container {
+    column-count: 3;
+  }
+}
+
 @media screen and (max-width: 1000px) {
-  .column {
+  #column {
     flex: 50%;
     max-width: 50%;
   }
