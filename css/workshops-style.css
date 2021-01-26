@@ -1,3 +1,7 @@
+.heading h2{
+  font-family: 'Permanent Marker', cursive;
+}
+
 .main-timeline{ font-family: 'Poppins', sans-serif; }
 .main-timeline:after{
     content: '';

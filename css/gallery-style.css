@@ -4,6 +4,20 @@
   padding-bottom: 5px;
 }
 
+h2{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+}
+
+.heading{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3em;
+}
+
+.heading h1{
+  text-align: center;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
