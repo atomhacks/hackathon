@@ -115,6 +115,7 @@ a:hover{
   padding: 15px;
   border-radius: 10px; 
   font-size: 15px; 
+  box-shadow: 10px 10px 8px #888888;
 }
 
 #topBtn:hover {
@@ -127,6 +128,10 @@ footer {
   color: #fff;
   text-align: center;
   margin-top: 10px;
+  position: absolute;
+ left:0;
+ width: 100%;
+ 
 }
 
 footer a {

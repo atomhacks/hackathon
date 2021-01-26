@@ -88,10 +88,24 @@
   position: relative;
 }
 
+.team-img {
+  overflow: hidden;
+}
+
+/*.team-img img {
+  transition: transform 200ms ease-in-out;
+}
+
+.team-img:hover img {
+  filter: brightness(50%);
+  transform: scale(1.1);
+}*/
+
 .team-img img{
   height:350px;
   width: auto;
   object-fit: cover;
+  transition: transform .5s ease;
 }
 
 .team-hover {
@@ -101,6 +115,7 @@
   bottom: 0;
   right: 0;
   margin: 0;
+  /*filter: brightness(80%);*/
   border: 20px solid #BBD5C0;
   background-color: rgba(255, 255, 255, 0.90);
   opacity: 0;
@@ -113,6 +128,10 @@
 }
 .team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
   opacity: 1;
+}
+
+.team-member:hover .team-img img{
+  transform: scale(1.2);
 }
 
 .team-hover .desk {
