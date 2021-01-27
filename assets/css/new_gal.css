@@ -1,0 +1,80 @@
+.container2 {
+    display: flex!important;
+    flex-wrap: wrap!important;
+    position: relative!important;
+    column-count: 4!important;
+}
+
+.image {
+    margin-bottom: 10px!important;
+    padding: 6px!important;
+    overflow: hidden!important;
+    flex: 35%!important;
+    max-width: 100%!important;
+}
+.image img {
+    transition: 200ms ease-in-out
+}
+.image:hover img {
+    transform: scale(1.1)
+}
+
+.image:hover .caption {
+    opacity: 0.8!important;
+}
+
+img {
+    width: 100%!important;
+}
+
+.row {
+    display: flex!important;
+    flex-wrap: wrap!important;
+    padding: 0 4px!important;
+    margin-left: 2px!important;
+}
+
+.caption {
+    position: absolute!important;
+    padding: 5px!important;
+    margin: 5px!important;
+    font-size: 16px!important;
+    color: #ffffff!important;
+    background: #5c5c5c!important;
+    border-radius: 5px!important;
+    opacity: 0!important;
+    z-index: 1!important;
+    transition: 0.25 ease-in-out !important;
+}
+
+@media screen and (max-width:1024px) {
+    .caption {
+        font-size: 14px!important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .caption {
+        font-size: 12px!important;
+        opacity: 0.8!important;
+    }
+    .image:hover .caption {
+        opacity: 0!important;
+    }
+}
+
+.schedule {
+    position: relative;
+    border-collapse: collapse;
+}
+
+.schedule tr {
+    border-bottom: 1px;
+}
+
+.schedule th {
+    border-width: thin;
+    border-color: white;
+    text-align: left;
+    padding: 8px;
+}

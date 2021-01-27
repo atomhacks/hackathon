@@ -1,0 +1,43 @@
+.image.fit:hover p {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    transition-delay: 0.3s;
+    transition: all 0.5s;
+
+    -webkit-transition: all 0.5s;
+
+    visibility: visible;
+
+    text-align: center;
+    width: auto;
+    font-weight: 900;
+    font-size: 1.25vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #f3f3f3;
+    outline-color: #1976d2;
+
+    background: #434343;
+    opacity: 0.6;
+    height: auto;
+}
+
+.image.fit p {
+    text-align-all: center;
+    text-align: center;
+    width: auto;
+
+    margin: 0;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+}
