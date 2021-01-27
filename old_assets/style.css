@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#background {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: url(./img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  z-index: -2;
+}
+
+#cover {
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+#text_info {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  width: 480px;
+  color: #fff;
+  text-align: center;
+}
+
+#text_info img {
+  width: 50%;
+  margin: 0 auto 32px;
+}
+
+#text_info h1 {
+  font-size: 64px;
+}
+
+#text_info h2 {
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+#text_info .buttons {
+  margin: 0 auto;
+}
+
+#text_info a {
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0);
+  font-size: 24px;
+  margin: 24px 12px 0;
+  /*width: 160px;*/
+  height: 32px;
+  display: inline-block;
+  padding: 8px 16px 4px;
+  /*padding: 8px 0 4px;*/
+  /*cursor: pointer;*/
+  /*text-align: center;*/
+  text-decoration: none;
+}
+
+#cover img {
+  position: absolute;
+  top: 92%;
+  width: 64px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+section {
+  position: relative;
+  padding: 48px 48px;
+}
+
+section:nth-child(2n) {
+  background-color: #007161;
+  color: #fff;
+}
+
+section:nth-child(2n+1) {
+  background-color: #fff;
+  color: #333;
+}
+
+.content {
+  width: 100%;
+  max-width: 960px;
+  max-width: 912px;
+  margin: 0 auto;
+}
+
+.content h1 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.content p {
+  max-width: 480px;
+  line-height: 32px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.content p:last-child {
+  margin-bottom: 8px;
+}
+
+.content img {
+  float: right;
+  width: 380px;
+}
+
+#laptop {
+  margin-top: -48px;
+  margin-right: 48px;
+}
+
+.question {
+  vertical-align: top;
+  width: 47.5%;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.question:nth-child(2n+1) {
+  float: right;
+}
+
+.question:last-child {
+  margin-bottom: 0;
+}
+
+.question h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.question p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.question a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.question a:hover {
+  color: #ccc;
+}
+
+#sponsors h1 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+#sponsors p {
+  max-width: 90%;
+  margin: 16px auto 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+#sponsors p a {
+  text-decoration: none;
+  color: #2196f3;
+  transition: color 0.25s ease;
+}
+
+#sponsors p a:hover {
+  color: #1976d2;
+}
+
+#sponsors .hr {
+  width: 100%;
+  background: #ccc;
+  height: 1px;
+  margin: 24px auto 32px;
+}
+
+#sponsors #images, #sponsors #partners {
+  text-align: center;
+}
+
+#sponsors img {
+  display: inline-block;
+  float: none;
+  height: 64px;
+  width: auto;
+  margin-right: 32px;
+  margin-bottom: 16px;
+  max-width: 100%;
+}
+
+#sponsors a:last-child img {
+  margin-right: 0;
+}
+
+#sponsors h2 {
+  text-align: center;
+  font-size: 32px;
+  margin: 16px auto 24px;
+}
+
+footer {
+  background: #222;
+  padding: 8px;
+  color: #fff;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.25s ease;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+@media only screen and (max-width: 760px) {
+  #cover img {
+    display: none;
+  }
+
+  #text_info h1 {
+    font-size: 42px;
+  }
+
+  #text_info h2 {
+    font-size: 24px;
+  }
+
+  #text_info a {
+    width: 120px;
+  }
+
+  section {
+    padding: 32px 32px;
+  }
+
+  .content h1 {
+    font-size: 32px;
+  }
+
+  #laptop {
+    float: none;
+    width: 70%;
+    margin: -24px auto 0;
+    display: block;
+  }
+
+  .question {
+    width: 100%;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .question:nth-child(2n+1) {
+    float: none;
+  }
+
+  #sponsors img {
+    height: 32px;
+  }
+
+  #sponsors p {
+    margin: -8px auto 16px;
+  }
+}
