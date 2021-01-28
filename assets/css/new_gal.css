@@ -20,7 +20,7 @@
 }
 
 .image:hover .caption {
-    opacity: 0.8!important;
+    opacity: 1!important;
 }
 
 img {
