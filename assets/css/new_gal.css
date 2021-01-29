@@ -55,11 +55,7 @@ img {
 
 @media screen and (max-width: 768px) {
     .caption {
-        font-size: 12px!important;
-        opacity: 0.8!important;
-    }
-    .image:hover .caption {
-        opacity: 0!important;
+        font-size: 10px!important;
     }
 }
 
