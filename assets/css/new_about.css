@@ -41,3 +41,15 @@
     visibility: hidden;
     transition: visibility 0s, opacity 0.5s linear;
 }
+
+.image.fit p a:hover {
+    color: #02A7D5;
+}
+
+.wrapper.style2 a {
+    color: #02A7D5!important;
+}
+
+.wrapper.style2 a:hover {
+    color: #8a4680!important;
+}
