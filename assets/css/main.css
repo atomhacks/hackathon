@@ -559,7 +559,7 @@ header p {
 
 .wrapper > .inner {
     margin: 0 auto;
-    width: 90%; //box length
+    width: 90%; /*box length*/
 }
 
 .wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
@@ -852,7 +852,7 @@ header p {
     width: 50%;
 }
 
-.grid-style > * { //WORK
+.grid-style > * { /*WORK*/
     padding: 2rem;
     width: calc(25% + 2rem);
 }
@@ -940,7 +940,7 @@ padding: 2rem;
 }
 
 .grid-style2 > :nth-child(2n + 1), .grid-style2 > :nth-child(2n) {
-    width: calc(50% + 0rem); //WORK
+    width: calc(50% + 0rem); /*WORK*/
 }
 
 .grid-style2 .box {
@@ -1545,6 +1545,24 @@ body.is-loading .banner:after {
         font-size: 4em;
     }
 
+}
+
+/* Prize Images */
+.prize-img .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#prize-row{
+    display: flex;
+}
+
+.prize-column{
+    flex: 50%;
 }
 
 body.is-mobile .banner > article {
