@@ -1571,6 +1571,7 @@ body.is-loading .banner:after {
 .prize-column{
     flex: 50%;
 }
+/* Prize Images end */
 
 body.is-mobile .banner > article {
     background-attachment: scroll;
